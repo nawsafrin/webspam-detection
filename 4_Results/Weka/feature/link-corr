@@ -1,0 +1,105 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   42
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 42 class):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.06632   24 siteneighbors_1_hp
+ 0.06502   18 pagerank_hp
+ 0.06495   32 truncatedpagerank_1_hp
+ 0.06432   36 truncatedpagerank_3_hp
+ 0.06358   38 truncatedpagerank_4_hp
+ 0.06329   34 truncatedpagerank_2_hp
+ 0.05905   19 pagerank_mp
+ 0.05377   37 truncatedpagerank_3_mp
+ 0.0535    39 truncatedpagerank_4_mp
+ 0.05227   33 truncatedpagerank_1_mp
+ 0.05189   35 truncatedpagerank_2_mp
+ 0.05119    1 eq_hp_mp
+ 0.0506    30 siteneighbors_4_hp
+ 0.04754   20 prsigma_hp
+ 0.0453    28 siteneighbors_3_hp
+ 0.04184   26 siteneighbors_2_hp
+ 0.04055   31 siteneighbors_4_mp
+ 0.03991   25 siteneighbors_1_mp
+ 0.03942    3 assortativity_mp
+ 0.03941   29 siteneighbors_3_mp
+ 0.03869   27 siteneighbors_2_mp
+ 0.03769   21 prsigma_mp
+ 0.03401   14 neighbors_4_hp
+ 0.02971   40 trustrank_hp
+ 0.02742    8 indegree_hp
+ 0.02576   41 trustrank_mp
+ 0.02404   16 outdegree_hp
+ 0.02395    9 indegree_mp
+ 0.02374   12 neighbors_3_hp
+ 0.0232     2 assortativity_hp
+ 0.02289   15 neighbors_4_mp
+ 0.018     23 reciprocity_mp
+ 0.01663    7 avgout_of_in_mp
+ 0.01213   17 outdegree_mp
+ 0.01153   13 neighbors_3_mp
+ 0.01032    4 avgin_of_out_hp
+ 0.0079     5 avgin_of_out_mp
+ 0.0055    10 neighbors_2_hp
+ 0.00255   22 reciprocity_hp
+ 0.00241    6 avgout_of_in_hp
+ 0.00223   11 neighbors_2_mp
+
+Selected attributes: 24,18,32,36,38,34,19,37,39,33,35,1,30,20,28,26,31,25,3,29,27,21,14,40,8,41,16,9,12,2,15,23,7,17,13,4,5,10,22,6,11 : 41
+

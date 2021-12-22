@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 8 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   44
+              hostid
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+              assessmentscore
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 8 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3979               99.5248 %
+Incorrectly Classified Instances        19                0.4752 %
+Kappa statistic                          0.9528
+Mean absolute error                      0.0069
+Root mean squared error                  0.0643
+Relative absolute error                  6.547  %
+Root relative squared error             28.0919 %
+Total Number of Instances             3998     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.914    0.000    1.000      0.914    0.955      0.954    0.990     0.982     spam
+                 1.000    0.086    0.995      1.000    0.997      0.954    0.990     0.999     nonspam
+Weighted Avg.    0.995    0.081    0.995      0.995    0.995      0.954    0.990     0.998     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  203   19 |    a = spam
+    0 3776 |    b = nonspam
+

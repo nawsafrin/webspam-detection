@@ -1,0 +1,330 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     .\uk-2007-05.link_based_features_transformed.csv
+Instances:    3998
+Attributes:   140
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                                                                                                                                                                                Class
+Variable                                                                                                                                                                                         spam
+=====================================================================================================================================================================================================
+hostid                                                                                                                                                                                         0.0001
+L_indegree_mp                                                                                                                                                                                  -3.098
+L_outdegree_hp                                                                                                                                                                                -0.0071
+L_outdegree_mp                                                                                                                                                                                -0.8127
+reciprocity_hp                                                                                                                                                                               -14.4189
+reciprocity_mp                                                                                                                                                                                46.7617
+L_assortativity_hp                                                                                                                                                                             3.2435
+L_assortativity_mp                                                                                                                                                                             3.4879
+L_avgin_of_out_hp                                                                                                                                                                              0.5811
+L_avgin_of_out_mp                                                                                                                                                                              1.6266
+log_OP_avgin_of_out_hp_mul_outdegree_hp_CP_                                                                                                                                                   -1.2412
+log_OP_avgin_of_out_mp_mul_outdegree_mp_CP_                                                                                                                                                   -0.1018
+L_avgout_of_in_hp                                                                                                                                                                              2.1195
+L_avgout_of_in_mp                                                                                                                                                                               3.551
+log_OP_avgout_of_in_hp_mul_indegree_hp_CP_                                                                                                                                                    -0.4717
+log_OP_avgout_of_in_mp_mul_indegree_mp_CP_                                                                                                                                                     3.5919
+eq_hp_mp                                                                                                                                                                                      26.8475
+L_pagerank_hp                                                                                                                                                                                 -1.2723
+L_pagerank_mp                                                                                                                                                                                 -0.4327
+log_OP_indegree_hp_div_pagerank_hp_CP_                                                                                                                                                        -2.7813
+log_OP_indegree_mp_div_pagerank_mp_CP_                                                                                                                                                        -2.7344
+log_OP_outdegree_hp_div_pagerank_hp_CP_                                                                                                                                                        0.5432
+log_OP_outdegree_mp_div_pagerank_mp_CP_                                                                                                                                                       -0.1404
+L_prsigma_hp                                                                                                                                                                                   -0.346
+L_prsigma_mp                                                                                                                                                                                  -1.7004
+log_OP_prsigma_hp_div_pagerank_hp_CP_                                                                                                                                                          1.1738
+log_OP_prsigma_mp_div_pagerank_mp_CP_                                                                                                                                                          0.3982
+pagerank_mp_div_pagerank_hp                                                                                                                                                                   -0.0752
+L_trustrank_hp                                                                                                                                                                                -2.1444
+L_trustrank_mp                                                                                                                                                                                 3.5446
+log_OP_trustrank_hp_div_pagerank_hp_CP_                                                                                                                                                       -3.4667
+log_OP_trustrank_mp_div_pagerank_mp_CP_                                                                                                                                                        9.8464
+log_OP_trustrank_hp_div_indegree_hp_CP_                                                                                                                                                          2.43
+log_OP_trustrank_mp_div_indegree_mp_CP_                                                                                                                                                       -9.9938
+trustrank_mp_div_trustrank_hp                                                                                                                                                                  0.0005
+L_siteneighbors_1_hp                                                                                                                                                                           1.1754
+L_siteneighbors_2_hp                                                                                                                                                                           1.2018
+L_siteneighbors_3_hp                                                                                                                                                                           1.1542
+L_siteneighbors_4_hp                                                                                                                                                                           1.1696
+L_siteneighbors_1_mp                                                                                                                                                                           3.8095
+L_siteneighbors_2_mp                                                                                                                                                                           3.1542
+L_siteneighbors_3_mp                                                                                                                                                                           2.2091
+L_siteneighbors_4_mp                                                                                                                                                                           1.5651
+log_OP_siteneighbors_1_hp_div_pagerank_hp_CP_                                                                                                                                                  0.4328
+log_OP_siteneighbors_2_hp_div_pagerank_hp_CP_                                                                                                                                                  0.4615
+log_OP_siteneighbors_3_hp_div_pagerank_hp_CP_                                                                                                                                                  0.4615
+log_OP_siteneighbors_4_hp_div_pagerank_hp_CP_                                                                                                                                                  0.4927
+log_OP_siteneighbors_1_mp_div_pagerank_mp_CP_                                                                                                                                                   1.255
+log_OP_siteneighbors_2_mp_div_pagerank_mp_CP_                                                                                                                                                  0.9594
+log_OP_siteneighbors_3_mp_div_pagerank_mp_CP_                                                                                                                                                  0.5132
+log_OP_siteneighbors_4_mp_div_pagerank_mp_CP_                                                                                                                                                  0.1992
+log_OP_siteneighbors_4_hp_div_siteneighbors_3_hp_CP_                                                                                                                                           5.8345
+log_OP_siteneighbors_4_mp_div_siteneighbors_3_mp_CP_                                                                                                                                         -20.5608
+log_OP_siteneighbors_3_hp_div_siteneighbors_2_hp_CP_                                                                                                                                           1.4147
+log_OP_siteneighbors_3_mp_div_siteneighbors_2_mp_CP_                                                                                                                                          -23.314
+log_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_CP_                                                                                                                                          10.9425
+log_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_CP_                                                                                                                                         -27.0427
+log_OP_min_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_                                            0.5277
+log_OP_min_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_                                            25.774
+log_OP_max_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_                                            3.0515
+log_OP_max_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_                                           36.8602
+log_OP_avg_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_                                          -24.1837
+log_OP_avg_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_                                           -6.4661
+log_OP__OP_siteneighbors_4_hp_m_siteneighbors_3_hp_CP__div_pagerank_hp_CP_                                                                                                                     0.1791
+log_OP__OP_siteneighbors_4_mp_m_siteneighbors_3_mp_CP__div_pagerank_mp_CP_                                                                                                                    -0.2015
+log_OP__OP_siteneighbors_3_hp_m_siteneighbors_2_hp_CP__div_pagerank_hp_CP_                                                                                                                     0.4383
+log_OP__OP_siteneighbors_3_mp_m_siteneighbors_2_mp_CP__div_pagerank_mp_CP_                                                                                                                     -0.401
+log_OP__OP_siteneighbors_2_hp_m_siteneighbors_1_hp_CP__div_pagerank_hp_CP_                                                                                                                    -0.0617
+log_OP__OP_siteneighbors_2_mp_m_siteneighbors_1_mp_CP__div_pagerank_mp_CP_                                                                                                                    -0.0241
+siteneighbors_1_hp_div_siteneighbors_1_mp                                                                                                                                                      0.9741
+siteneighbors_2_hp_div_siteneighbors_2_mp                                                                                                                                                     -1.7133
+siteneighbors_3_hp_div_siteneighbors_3_mp                                                                                                                                                      0.1901
+siteneighbors_4_hp_div_siteneighbors_4_mp                                                                                                                                                     -0.0569
+L_neighbors_2_hp                                                                                                                                                                              -1.4422
+L_neighbors_3_hp                                                                                                                                                                              -1.0708
+L_neighbors_4_hp                                                                                                                                                                              -0.8752
+L_neighbors_2_mp                                                                                                                                                                              -1.0406
+L_neighbors_3_mp                                                                                                                                                                              -0.8834
+L_neighbors_4_mp                                                                                                                                                                              -0.8633
+log_OP_neighbors_2_hp_div_pagerank_hp_CP_                                                                                                                                                     -1.0938
+log_OP_neighbors_3_hp_div_pagerank_hp_CP_                                                                                                                                                     -0.8528
+log_OP_neighbors_4_hp_div_pagerank_hp_CP_                                                                                                                                                     -0.7177
+log_OP_neighbors_2_mp_div_pagerank_mp_CP_                                                                                                                                                     -1.4318
+log_OP_neighbors_3_mp_div_pagerank_mp_CP_                                                                                                                                                     -1.2618
+log_OP_neighbors_4_mp_div_pagerank_mp_CP_                                                                                                                                                     -1.1931
+log_OP_neighbors_4_hp_div_neighbors_3_hp_CP_                                                                                                                                                   5.8146
+log_OP_neighbors_4_mp_div_neighbors_3_mp_CP_                                                                                                                                                  -0.7577
+log_OP_neighbors_3_hp_div_neighbors_2_hp_CP_                                                                                                                                                   7.7877
+log_OP_neighbors_3_mp_div_neighbors_2_mp_CP_                                                                                                                                                   1.1578
+log_OP_neighbors_2_hp_div_indegree_hp_CP_                                                                                                                                                     16.1734
+log_OP_neighbors_2_mp_div_indegree_mp_CP_                                                                                                                                                       -3.35
+log_OP_min_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_                                                                     -18.0046
+log_OP_min_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_                                                                      10.6125
+log_OP_max_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_                                                                      -2.9861
+log_OP_max_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_                                                                      14.4977
+log_OP_avg_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_                                                                     -11.5969
+log_OP_avg_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_                                                                      -3.8899
+log_OP__OP_neighbors_4_hp_m_neighbors_3_hp_CP__div_pagerank_hp_CP_                                                                                                                             0.4084
+log_OP__OP_neighbors_4_mp_m_neighbors_3_mp_CP__div_pagerank_mp_CP_                                                                                                                            -0.4977
+log_OP__OP_neighbors_3_hp_m_neighbors_2_hp_CP__div_pagerank_hp_CP_                                                                                                                             0.7655
+log_OP__OP_neighbors_3_mp_m_neighbors_2_mp_CP__div_pagerank_mp_CP_                                                                                                                              -0.73
+log_OP__OP_neighbors_2_hp_m_indegree_hp_CP__div_pagerank_hp_CP_                                                                                                                               -0.3275
+log_OP__OP_neighbors_2_mp_m_indegree_mp_CP__div_pagerank_mp_CP_                                                                                                                                0.1452
+neighbors_2_hp_div_neighbors_2_mp                                                                                                                                                             -0.0515
+neighbors_3_hp_div_neighbors_3_mp                                                                                                                                                             -0.0248
+neighbors_4_hp_div_neighbors_4_mp                                                                                                                                                             -0.0026
+L_truncatedpagerank_1_hp                                                                                                                                                                      -2.1015
+L_truncatedpagerank_2_hp                                                                                                                                                                      -1.2621
+L_truncatedpagerank_3_hp                                                                                                                                                                      -0.0126
+L_truncatedpagerank_4_hp                                                                                                                                                                      -0.0001
+L_truncatedpagerank_1_mp                                                                                                                                                                      -1.8292
+L_truncatedpagerank_2_mp                                                                                                                                                                      -0.2129
+L_truncatedpagerank_3_mp                                                                                                                                                                        0.906
+L_truncatedpagerank_4_mp                                                                                                                                                                       1.0437
+log_OP_truncatedpagerank_1_hp_div_pagerank_hp_CP_                                                                                                                                             -23.665
+log_OP_truncatedpagerank_2_hp_div_pagerank_hp_CP_                                                                                                                                             -6.3914
+log_OP_truncatedpagerank_3_hp_div_pagerank_hp_CP_                                                                                                                                             11.3037
+log_OP_truncatedpagerank_4_hp_div_pagerank_hp_CP_                                                                                                                                              10.319
+log_OP_truncatedpagerank_1_mp_div_pagerank_mp_CP_                                                                                                                                            -37.4008
+log_OP_truncatedpagerank_2_mp_div_pagerank_mp_CP_                                                                                                                                              1.9574
+log_OP_truncatedpagerank_3_mp_div_pagerank_mp_CP_                                                                                                                                             19.5915
+log_OP_truncatedpagerank_4_mp_div_pagerank_mp_CP_                                                                                                                                             19.4407
+truncatedpagerank_4_hp_div_truncatedpagerank_3_hp                                                                                                                                            -44.7407
+truncatedpagerank_4_mp_div_truncatedpagerank_3_mp                                                                                                                                            -95.9488
+truncatedpagerank_3_hp_div_truncatedpagerank_2_hp                                                                                                                                             17.6143
+truncatedpagerank_3_mp_div_truncatedpagerank_2_mp                                                                                                                                           -147.5955
+truncatedpagerank_2_hp_div_truncatedpagerank_1_hp                                                                                                                                            -61.8052
+truncatedpagerank_2_mp_div_truncatedpagerank_1_mp                                                                                                                                             27.2531
+log_OP_min_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_                  -24.8499
+log_OP_min_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_                 -228.4625
+log_OP_max_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_                 -330.8127
+log_OP_max_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_                  -30.1076
+log_OP_avg_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_                  260.5279
+log_OP_avg_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_                  409.7415
+truncatedpagerank_1_mp_div_truncatedpagerank_1_hp                                                                                                                                              0.0064
+truncatedpagerank_2_mp_div_truncatedpagerank_2_hp                                                                                                                                              0.0024
+truncatedpagerank_3_mp_div_truncatedpagerank_3_hp                                                                                                                                              0.0008
+truncatedpagerank_4_mp_div_truncatedpagerank_4_hp                                                                                                                                             -0.0005
+assessmentscore                                                                                                                                                                              186.6397
+Intercept                                                                                                                                                                                     30.7942
+
+
+Odds Ratios...
+                                                                                                                                                                                                Class
+Variable                                                                                                                                                                                         spam
+=====================================================================================================================================================================================================
+hostid                                                                                                                                                                                         1.0001
+L_indegree_mp                                                                                                                                                                                  0.0451
+L_outdegree_hp                                                                                                                                                                                 0.9929
+L_outdegree_mp                                                                                                                                                                                 0.4436
+reciprocity_hp                                                                                                                                                                                      0
+reciprocity_mp                                                                                                                                                                  2.0340259184582584E20
+L_assortativity_hp                                                                                                                                                                            25.6236
+L_assortativity_mp                                                                                                                                                                             32.717
+L_avgin_of_out_hp                                                                                                                                                                               1.788
+L_avgin_of_out_mp                                                                                                                                                                              5.0866
+log_OP_avgin_of_out_hp_mul_outdegree_hp_CP_                                                                                                                                                     0.289
+log_OP_avgin_of_out_mp_mul_outdegree_mp_CP_                                                                                                                                                    0.9032
+L_avgout_of_in_hp                                                                                                                                                                              8.3267
+L_avgout_of_in_mp                                                                                                                                                                             34.8484
+log_OP_avgout_of_in_hp_mul_indegree_hp_CP_                                                                                                                                                     0.6239
+log_OP_avgout_of_in_mp_mul_indegree_mp_CP_                                                                                                                                                    36.3015
+eq_hp_mp                                                                                                                                                                         4.567761868367508E11
+L_pagerank_hp                                                                                                                                                                                  0.2802
+L_pagerank_mp                                                                                                                                                                                  0.6488
+log_OP_indegree_hp_div_pagerank_hp_CP_                                                                                                                                                          0.062
+log_OP_indegree_mp_div_pagerank_mp_CP_                                                                                                                                                         0.0649
+log_OP_outdegree_hp_div_pagerank_hp_CP_                                                                                                                                                        1.7214
+log_OP_outdegree_mp_div_pagerank_mp_CP_                                                                                                                                                         0.869
+L_prsigma_hp                                                                                                                                                                                   0.7075
+L_prsigma_mp                                                                                                                                                                                   0.1826
+log_OP_prsigma_hp_div_pagerank_hp_CP_                                                                                                                                                          3.2344
+log_OP_prsigma_mp_div_pagerank_mp_CP_                                                                                                                                                          1.4891
+pagerank_mp_div_pagerank_hp                                                                                                                                                                    0.9275
+L_trustrank_hp                                                                                                                                                                                 0.1171
+L_trustrank_mp                                                                                                                                                                                34.6242
+log_OP_trustrank_hp_div_pagerank_hp_CP_                                                                                                                                                        0.0312
+log_OP_trustrank_mp_div_pagerank_mp_CP_                                                                                                                                                    18889.8515
+log_OP_trustrank_hp_div_indegree_hp_CP_                                                                                                                                                       11.3593
+log_OP_trustrank_mp_div_indegree_mp_CP_                                                                                                                                                             0
+trustrank_mp_div_trustrank_hp                                                                                                                                                                  1.0005
+L_siteneighbors_1_hp                                                                                                                                                                           3.2394
+L_siteneighbors_2_hp                                                                                                                                                                           3.3261
+L_siteneighbors_3_hp                                                                                                                                                                           3.1714
+L_siteneighbors_4_hp                                                                                                                                                                           3.2206
+L_siteneighbors_1_mp                                                                                                                                                                          45.1279
+L_siteneighbors_2_mp                                                                                                                                                                          23.4351
+L_siteneighbors_3_mp                                                                                                                                                                           9.1079
+L_siteneighbors_4_mp                                                                                                                                                                           4.7833
+log_OP_siteneighbors_1_hp_div_pagerank_hp_CP_                                                                                                                                                  1.5415
+log_OP_siteneighbors_2_hp_div_pagerank_hp_CP_                                                                                                                                                  1.5864
+log_OP_siteneighbors_3_hp_div_pagerank_hp_CP_                                                                                                                                                  1.5865
+log_OP_siteneighbors_4_hp_div_pagerank_hp_CP_                                                                                                                                                  1.6367
+log_OP_siteneighbors_1_mp_div_pagerank_mp_CP_                                                                                                                                                  3.5079
+log_OP_siteneighbors_2_mp_div_pagerank_mp_CP_                                                                                                                                                  2.6103
+log_OP_siteneighbors_3_mp_div_pagerank_mp_CP_                                                                                                                                                  1.6706
+log_OP_siteneighbors_4_mp_div_pagerank_mp_CP_                                                                                                                                                  1.2204
+log_OP_siteneighbors_4_hp_div_siteneighbors_3_hp_CP_                                                                                                                                         341.8805
+log_OP_siteneighbors_4_mp_div_siteneighbors_3_mp_CP_                                                                                                                                                0
+log_OP_siteneighbors_3_hp_div_siteneighbors_2_hp_CP_                                                                                                                                           4.1153
+log_OP_siteneighbors_3_mp_div_siteneighbors_2_mp_CP_                                                                                                                                                0
+log_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_CP_                                                                                                                                       56526.3074
+log_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_CP_                                                                                                                                                0
+log_OP_min_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_                                            1.6951
+log_OP_min_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_                             1.5613341471282748E11
+log_OP_max_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_                                           21.1462
+log_OP_max_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_                             1.0190007780044334E16
+log_OP_avg_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_                                                 0
+log_OP_avg_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_                                            0.0016
+log_OP__OP_siteneighbors_4_hp_m_siteneighbors_3_hp_CP__div_pagerank_hp_CP_                                                                                                                     1.1962
+log_OP__OP_siteneighbors_4_mp_m_siteneighbors_3_mp_CP__div_pagerank_mp_CP_                                                                                                                     0.8175
+log_OP__OP_siteneighbors_3_hp_m_siteneighbors_2_hp_CP__div_pagerank_hp_CP_                                                                                                                     1.5501
+log_OP__OP_siteneighbors_3_mp_m_siteneighbors_2_mp_CP__div_pagerank_mp_CP_                                                                                                                     0.6696
+log_OP__OP_siteneighbors_2_hp_m_siteneighbors_1_hp_CP__div_pagerank_hp_CP_                                                                                                                     0.9402
+log_OP__OP_siteneighbors_2_mp_m_siteneighbors_1_mp_CP__div_pagerank_mp_CP_                                                                                                                     0.9762
+siteneighbors_1_hp_div_siteneighbors_1_mp                                                                                                                                                      2.6487
+siteneighbors_2_hp_div_siteneighbors_2_mp                                                                                                                                                      0.1803
+siteneighbors_3_hp_div_siteneighbors_3_mp                                                                                                                                                      1.2093
+siteneighbors_4_hp_div_siteneighbors_4_mp                                                                                                                                                      0.9447
+L_neighbors_2_hp                                                                                                                                                                               0.2364
+L_neighbors_3_hp                                                                                                                                                                               0.3427
+L_neighbors_4_hp                                                                                                                                                                               0.4168
+L_neighbors_2_mp                                                                                                                                                                               0.3532
+L_neighbors_3_mp                                                                                                                                                                               0.4134
+L_neighbors_4_mp                                                                                                                                                                               0.4218
+log_OP_neighbors_2_hp_div_pagerank_hp_CP_                                                                                                                                                      0.3349
+log_OP_neighbors_3_hp_div_pagerank_hp_CP_                                                                                                                                                      0.4262
+log_OP_neighbors_4_hp_div_pagerank_hp_CP_                                                                                                                                                      0.4879
+log_OP_neighbors_2_mp_div_pagerank_mp_CP_                                                                                                                                                      0.2389
+log_OP_neighbors_3_mp_div_pagerank_mp_CP_                                                                                                                                                      0.2831
+log_OP_neighbors_4_mp_div_pagerank_mp_CP_                                                                                                                                                      0.3033
+log_OP_neighbors_4_hp_div_neighbors_3_hp_CP_                                                                                                                                                 335.1731
+log_OP_neighbors_4_mp_div_neighbors_3_mp_CP_                                                                                                                                                   0.4688
+log_OP_neighbors_3_hp_div_neighbors_2_hp_CP_                                                                                                                                                2410.8484
+log_OP_neighbors_3_mp_div_neighbors_2_mp_CP_                                                                                                                                                   3.1828
+log_OP_neighbors_2_hp_div_indegree_hp_CP_                                                                                                                                               10568709.2974
+log_OP_neighbors_2_mp_div_indegree_mp_CP_                                                                                                                                                      0.0351
+log_OP_min_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_                                                                            0
+log_OP_min_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_                                                                   40637.7461
+log_OP_max_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_                                                                       0.0505
+log_OP_max_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_                                                                 1978250.2438
+log_OP_avg_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_                                                                            0
+log_OP_avg_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_                                                                       0.0204
+log_OP__OP_neighbors_4_hp_m_neighbors_3_hp_CP__div_pagerank_hp_CP_                                                                                                                             1.5044
+log_OP__OP_neighbors_4_mp_m_neighbors_3_mp_CP__div_pagerank_mp_CP_                                                                                                                             0.6079
+log_OP__OP_neighbors_3_hp_m_neighbors_2_hp_CP__div_pagerank_hp_CP_                                                                                                                               2.15
+log_OP__OP_neighbors_3_mp_m_neighbors_2_mp_CP__div_pagerank_mp_CP_                                                                                                                             0.4819
+log_OP__OP_neighbors_2_hp_m_indegree_hp_CP__div_pagerank_hp_CP_                                                                                                                                0.7207
+log_OP__OP_neighbors_2_mp_m_indegree_mp_CP__div_pagerank_mp_CP_                                                                                                                                1.1563
+neighbors_2_hp_div_neighbors_2_mp                                                                                                                                                              0.9498
+neighbors_3_hp_div_neighbors_3_mp                                                                                                                                                              0.9755
+neighbors_4_hp_div_neighbors_4_mp                                                                                                                                                              0.9975
+L_truncatedpagerank_1_hp                                                                                                                                                                       0.1223
+L_truncatedpagerank_2_hp                                                                                                                                                                       0.2831
+L_truncatedpagerank_3_hp                                                                                                                                                                       0.9874
+L_truncatedpagerank_4_hp                                                                                                                                                                       0.9999
+L_truncatedpagerank_1_mp                                                                                                                                                                       0.1605
+L_truncatedpagerank_2_mp                                                                                                                                                                       0.8082
+L_truncatedpagerank_3_mp                                                                                                                                                                       2.4745
+L_truncatedpagerank_4_mp                                                                                                                                                                       2.8398
+log_OP_truncatedpagerank_1_hp_div_pagerank_hp_CP_                                                                                                                                                   0
+log_OP_truncatedpagerank_2_hp_div_pagerank_hp_CP_                                                                                                                                              0.0017
+log_OP_truncatedpagerank_3_hp_div_pagerank_hp_CP_                                                                                                                                          81118.4107
+log_OP_truncatedpagerank_4_hp_div_pagerank_hp_CP_                                                                                                                                          30303.1544
+log_OP_truncatedpagerank_1_mp_div_pagerank_mp_CP_                                                                                                                                                   0
+log_OP_truncatedpagerank_2_mp_div_pagerank_mp_CP_                                                                                                                                              7.0806
+log_OP_truncatedpagerank_3_mp_div_pagerank_mp_CP_                                                                                                                                      322447572.9617
+log_OP_truncatedpagerank_4_mp_div_pagerank_mp_CP_                                                                                                                                      277322853.2146
+truncatedpagerank_4_hp_div_truncatedpagerank_3_hp                                                                                                                                                   0
+truncatedpagerank_4_mp_div_truncatedpagerank_3_mp                                                                                                                                                   0
+truncatedpagerank_3_hp_div_truncatedpagerank_2_hp                                                                                                                                       44644932.1846
+truncatedpagerank_3_mp_div_truncatedpagerank_2_mp                                                                                                                                                   0
+truncatedpagerank_2_hp_div_truncatedpagerank_1_hp                                                                                                                                                   0
+truncatedpagerank_2_mp_div_truncatedpagerank_1_mp                                                                                                                                6.852646513222009E11
+log_OP_min_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_                         0
+log_OP_min_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_                         0
+log_OP_max_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_                         0
+log_OP_max_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_                         0
+log_OP_avg_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_    1.3990259953280551E113
+log_OP_avg_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_     8.881473493565958E177
+truncatedpagerank_1_mp_div_truncatedpagerank_1_hp                                                                                                                                              1.0064
+truncatedpagerank_2_mp_div_truncatedpagerank_2_hp                                                                                                                                              1.0024
+truncatedpagerank_3_mp_div_truncatedpagerank_3_hp                                                                                                                                              1.0008
+truncatedpagerank_4_mp_div_truncatedpagerank_4_hp                                                                                                                                              0.9995
+assessmentscore                                                                                                                                                                 1.1391612914730002E81
+
+
+Time taken to build model: 0.49 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3985               99.6748 %
+Incorrectly Classified Instances        13                0.3252 %
+Kappa statistic                          0.9695
+Mean absolute error                      0.0033
+Root mean squared error                  0.0557
+Relative absolute error                  3.1782 %
+Root relative squared error             24.3396 %
+Total Number of Instances             3998     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.986    0.003    0.956      0.986    0.971      0.970    0.999     0.990     spam
+                 0.997    0.014    0.999      0.997    0.998      0.970    0.995     0.999     nonspam
+Weighted Avg.    0.997    0.013    0.997      0.997    0.997      0.970    0.995     0.999     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  219    3 |    a = spam
+   10 3766 |    b = nonspam
+

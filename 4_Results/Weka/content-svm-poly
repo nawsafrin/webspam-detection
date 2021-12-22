@@ -1,0 +1,251 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     .\uk-2007-05.content_based_features.csv
+Instances:    3849
+Attributes:   99
+              hostid
+              HST_1
+              HST_2
+              HST_3
+              HST_4
+              HST_5
+              HST_6
+              HST_7
+              HST_8
+              HST_9
+              HST_10
+              HST_11
+              HST_12
+              HST_13
+              HST_14
+              HST_15
+              HST_16
+              HST_17
+              HST_18
+              HST_19
+              HST_20
+              HST_21
+              HST_22
+              HST_23
+              HST_24
+              HMG_25
+              HMG_26
+              HMG_27
+              HMG_28
+              HMG_29
+              HMG_30
+              HMG_31
+              HMG_32
+              HMG_33
+              HMG_34
+              HMG_35
+              HMG_36
+              HMG_37
+              HMG_38
+              HMG_39
+              HMG_40
+              HMG_41
+              HMG_42
+              HMG_43
+              HMG_44
+              HMG_45
+              HMG_46
+              HMG_47
+              HMG_48
+              AVG_49
+              AVG_50
+              AVG_51
+              AVG_52
+              AVG_53
+              AVG_54
+              AVG_55
+              AVG_56
+              AVG_57
+              AVG_58
+              AVG_59
+              AVG_60
+              AVG_61
+              AVG_62
+              AVG_63
+              AVG_64
+              AVG_65
+              AVG_66
+              AVG_67
+              AVG_68
+              AVG_69
+              AVG_70
+              AVG_71
+              AVG_72
+              STD_73
+              STD_74
+              STD_75
+              STD_76
+              STD_77
+              STD_78
+              STD_79
+              STD_80
+              STD_81
+              STD_82
+              STD_83
+              STD_84
+              STD_85
+              STD_86
+              STD_87
+              STD_88
+              STD_89
+              STD_90
+              STD_91
+              STD_92
+              STD_93
+              STD_94
+              STD_95
+              STD_96
+              class
+              assessmentscore
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: spam, nonspam
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0238 * (normalized) hostid
+ +      -0.0118 * (normalized) HST_1
+ +       0.1426 * (normalized) HST_2
+ +       0.1155 * (normalized) HST_3
+ +      -0.0303 * (normalized) HST_4
+ +       0.2075 * (normalized) HST_5
+ +      -0.0569 * (normalized) HST_6
+ +      -0.0556 * (normalized) HST_7
+ +      -0.2872 * (normalized) HST_8
+ +      -0.2072 * (normalized) HST_9
+ +      -0.1993 * (normalized) HST_10
+ +      -0.0386 * (normalized) HST_11
+ +      -0.0351 * (normalized) HST_12
+ +      -0.0401 * (normalized) HST_13
+ +      -0.0299 * (normalized) HST_14
+ +       0.0495 * (normalized) HST_15
+ +      -0.1577 * (normalized) HST_16
+ +      -0.2282 * (normalized) HST_17
+ +      -0.0103 * (normalized) HST_18
+ +      -0.0116 * (normalized) HST_19
+ +      -0.0443 * (normalized) HST_20
+ +      -0.0182 * (normalized) HST_21
+ +      -0.011  * (normalized) HST_22
+ +       0.105  * (normalized) HST_23
+ +       0.0815 * (normalized) HST_24
+ +      -0.0079 * (normalized) HMG_25
+ +       0.0629 * (normalized) HMG_26
+ +       0.0097 * (normalized) HMG_27
+ +      -0.0078 * (normalized) HMG_28
+ +      -0.1929 * (normalized) HMG_29
+ +      -0.0632 * (normalized) HMG_30
+ +      -0.0113 * (normalized) HMG_31
+ +      -0.1997 * (normalized) HMG_32
+ +       0.086  * (normalized) HMG_33
+ +       0.2093 * (normalized) HMG_34
+ +      -0.056  * (normalized) HMG_35
+ +      -0.048  * (normalized) HMG_36
+ +      -0.052  * (normalized) HMG_37
+ +      -0.0363 * (normalized) HMG_38
+ +       0.1734 * (normalized) HMG_39
+ +       0.0446 * (normalized) HMG_40
+ +      -0.0952 * (normalized) HMG_41
+ +       0.1656 * (normalized) HMG_42
+ +      -0.025  * (normalized) HMG_43
+ +      -0.0611 * (normalized) HMG_44
+ +      -0.0277 * (normalized) HMG_45
+ +      -0.0169 * (normalized) HMG_46
+ +      -0.091  * (normalized) HMG_47
+ +       0.0157 * (normalized) HMG_48
+ +      -0.0233 * (normalized) AVG_49
+ +       0.1114 * (normalized) AVG_50
+ +      -0.0372 * (normalized) AVG_51
+ +      -0.0594 * (normalized) AVG_52
+ +      -0.2892 * (normalized) AVG_53
+ +      -0.0219 * (normalized) AVG_54
+ +       0.0254 * (normalized) AVG_55
+ +      -0.1959 * (normalized) AVG_56
+ +      -0.2174 * (normalized) AVG_57
+ +       0.015  * (normalized) AVG_58
+ +      -0.0708 * (normalized) AVG_59
+ +      -0.0573 * (normalized) AVG_60
+ +      -0.0636 * (normalized) AVG_61
+ +      -0.0511 * (normalized) AVG_62
+ +       0.1467 * (normalized) AVG_63
+ +      -0.0644 * (normalized) AVG_64
+ +      -0.143  * (normalized) AVG_65
+ +       0.0997 * (normalized) AVG_66
+ +      -0.0374 * (normalized) AVG_67
+ +      -0.0657 * (normalized) AVG_68
+ +      -0.0439 * (normalized) AVG_69
+ +      -0.0369 * (normalized) AVG_70
+ +       0.0722 * (normalized) AVG_71
+ +       0.1257 * (normalized) AVG_72
+ +       0.0015 * (normalized) STD_73
+ +       0      * (normalized) STD_74
+ +      -0.002  * (normalized) STD_75
+ +      -0.0006 * (normalized) STD_76
+ +      -0.1441 * (normalized) STD_77
+ +      -0.0068 * (normalized) STD_78
+ +       0.0384 * (normalized) STD_79
+ +       0.0642 * (normalized) STD_80
+ +       0.146  * (normalized) STD_81
+ +       0.2419 * (normalized) STD_82
+ +      -0      * (normalized) STD_83
+ +      -0.0004 * (normalized) STD_84
+ +      -0.0007 * (normalized) STD_85
+ +      -0.0006 * (normalized) STD_86
+ +       0.0689 * (normalized) STD_87
+ +       0.1245 * (normalized) STD_88
+ +       0.2042 * (normalized) STD_89
+ +       0.2531 * (normalized) STD_90
+ +       0.0063 * (normalized) STD_91
+ +       0.0047 * (normalized) STD_92
+ +       0.0017 * (normalized) STD_93
+ +      -0.0014 * (normalized) STD_94
+ +      -0.1196 * (normalized) STD_95
+ +       0.1553 * (normalized) STD_96
+ +      -5.085  * (normalized) assessmentscore
+ +       2.7508
+
+Number of kernel evaluations: 29065 (63.25% cached)
+
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3848               99.974  %
+Incorrectly Classified Instances         1                0.026  %
+Kappa statistic                          0.9975
+Mean absolute error                      0.0003
+Root mean squared error                  0.0161
+Relative absolute error                  0.2535 %
+Root relative squared error              7.129  %
+Total Number of Instances             3849     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    0.995      1.000    0.998      0.997    1.000     0.995     spam
+                 1.000    0.000    1.000      1.000    1.000      0.997    1.000     1.000     nonspam
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      0.997    1.000     1.000     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  208    0 |    a = spam
+    1 3640 |    b = nonspam
+

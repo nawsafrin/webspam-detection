@@ -1,0 +1,346 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     .\uk-2007-05.content_based_features.csv
+Instances:    3849
+Attributes:   99
+              hostid
+              HST_1
+              HST_2
+              HST_3
+              HST_4
+              HST_5
+              HST_6
+              HST_7
+              HST_8
+              HST_9
+              HST_10
+              HST_11
+              HST_12
+              HST_13
+              HST_14
+              HST_15
+              HST_16
+              HST_17
+              HST_18
+              HST_19
+              HST_20
+              HST_21
+              HST_22
+              HST_23
+              HST_24
+              HMG_25
+              HMG_26
+              HMG_27
+              HMG_28
+              HMG_29
+              HMG_30
+              HMG_31
+              HMG_32
+              HMG_33
+              HMG_34
+              HMG_35
+              HMG_36
+              HMG_37
+              HMG_38
+              HMG_39
+              HMG_40
+              HMG_41
+              HMG_42
+              HMG_43
+              HMG_44
+              HMG_45
+              HMG_46
+              HMG_47
+              HMG_48
+              AVG_49
+              AVG_50
+              AVG_51
+              AVG_52
+              AVG_53
+              AVG_54
+              AVG_55
+              AVG_56
+              AVG_57
+              AVG_58
+              AVG_59
+              AVG_60
+              AVG_61
+              AVG_62
+              AVG_63
+              AVG_64
+              AVG_65
+              AVG_66
+              AVG_67
+              AVG_68
+              AVG_69
+              AVG_70
+              AVG_71
+              AVG_72
+              STD_73
+              STD_74
+              STD_75
+              STD_76
+              STD_77
+              STD_78
+              STD_79
+              STD_80
+              STD_81
+              STD_82
+              STD_83
+              STD_84
+              STD_85
+              STD_86
+              STD_87
+              STD_88
+              STD_89
+              STD_90
+              STD_91
+              STD_92
+              STD_93
+              STD_94
+              STD_95
+              STD_96
+              class
+              assessmentscore
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                    Class
+Variable                             spam
+=========================================
+hostid                                  0
+HST_1                              0.0238
+HST_2                              0.7896
+HST_3                             -8.2317
+HST_4                             -1.9304
+HST_5                           -615.1151
+HST_6                             10.9633
+HST_7                            170.5332
+HST_8                             -2.0798
+HST_9                             35.7379
+HST_10                           -38.7296
+HST_11                           -11.2792
+HST_12                           -12.0743
+HST_13                            21.1286
+HST_14                            27.4133
+HST_15                          -221.5603
+HST_16                           286.0232
+HST_17                           -83.4019
+HST_18                           -87.9819
+HST_19                           -18.3455
+HST_20                             -6.624
+HST_21                           -28.2559
+HST_22                            29.5344
+HST_23                           -10.1238
+HST_24                             7.9399
+HMG_25                            -0.0018
+HMG_26                            -1.1079
+HMG_27                             0.4531
+HMG_28                           -11.7373
+HMG_29                           106.6844
+HMG_30                            -4.3015
+HMG_31                            15.1458
+HMG_32                            17.7373
+HMG_33                            -31.249
+HMG_34                           -22.5748
+HMG_35                            -1.9464
+HMG_36                            -6.8636
+HMG_37                            -7.6776
+HMG_38                           -23.7372
+HMG_39                            89.6648
+HMG_40                           -58.0512
+HMG_41                           237.9484
+HMG_42                          -105.2257
+HMG_43                            23.6513
+HMG_44                             29.766
+HMG_45                           -48.3036
+HMG_46                            -4.8631
+HMG_47                             6.8853
+HMG_48                            -7.3654
+AVG_49                            -0.0211
+AVG_50                             0.8789
+AVG_51                              8.602
+AVG_52                            10.3611
+AVG_53                            48.9773
+AVG_54                           -11.3802
+AVG_55                          -201.2457
+AVG_56                            24.8564
+AVG_57                            48.4473
+AVG_58                           -36.0085
+AVG_59                            18.4586
+AVG_60                             -1.431
+AVG_61                            27.1105
+AVG_62                             4.1847
+AVG_63                           392.4778
+AVG_64                          -396.5041
+AVG_65                           -79.1027
+AVG_66                            91.0108
+AVG_67                           -13.6182
+AVG_68                           149.6962
+AVG_69                           -82.8219
+AVG_70                          -101.1103
+AVG_71                             4.0183
+AVG_72                            -7.4375
+STD_73                                  0
+STD_74                                 -0
+STD_75                            -2.3078
+STD_76                            -0.1524
+STD_77                          7669.1368
+STD_78                              0.284
+STD_79                          -533.7135
+STD_80                            696.321
+STD_81                          -961.0951
+STD_82                           876.0708
+STD_83                             0.2496
+STD_84                            -0.0197
+STD_85                            -1.4815
+STD_86                           -19.8329
+STD_87                          -103.4471
+STD_88                          -236.4089
+STD_89                          3138.9929
+STD_90                         -3197.1461
+STD_91                             -3.988
+STD_92                            -1.8151
+STD_93                           -10.3392
+STD_94                            43.2548
+STD_95                             7.8794
+STD_96                            -15.015
+assessmentscore                  192.4084
+Intercept                        -34.1269
+
+
+Odds Ratios...
+                                    Class
+Variable                             spam
+=========================================
+hostid                                  1
+HST_1                              1.0241
+HST_2                              2.2025
+HST_3                              0.0003
+HST_4                              0.1451
+HST_5                                   0
+HST_6                          57716.1134
+HST_7               1.1524785774224483E74
+HST_8                               0.125
+HST_9               3.3172585677885055E15
+HST_10                                  0
+HST_11                                  0
+HST_12                                  0
+HST_13                    1499761209.8208
+HST_14                8.04384969421485E11
+HST_15                                  0
+HST_16             1.6530971432064287E124
+HST_17                                  0
+HST_18                                  0
+HST_19                                  0
+HST_20                             0.0013
+HST_21                                  0
+HST_22               6.708767610900209E12
+HST_23                                  0
+HST_24                          2807.1338
+HMG_25                             0.9982
+HMG_26                             0.3302
+HMG_27                             1.5731
+HMG_28                                  0
+HMG_29               2.150052107110457E46
+HMG_30                             0.0135
+HMG_31                       3782034.5013
+HMG_32                      50490652.8164
+HMG_33                                  0
+HMG_34                                  0
+HMG_35                             0.1428
+HMG_36                              0.001
+HMG_37                             0.0005
+HMG_38                                  0
+HMG_39               8.728395092914229E38
+HMG_40                                  0
+HMG_41             2.1862043425999645E103
+HMG_42                                  0
+HMG_43               1.869105113989893E10
+HMG_44               8.456990233659751E12
+HMG_45                                  0
+HMG_46                             0.0077
+HMG_47                           977.7897
+HMG_48                             0.0006
+AVG_49                             0.9791
+AVG_50                             2.4082
+AVG_51                          5442.6854
+AVG_52                            31605.2
+AVG_53               1.864510528524411E21
+AVG_54                                  0
+AVG_55                                  0
+AVG_56               6.237546575481238E10
+AVG_57              1.0974287333891227E21
+AVG_58                                  0
+AVG_59                     103869627.8655
+AVG_60                             0.2391
+AVG_61               5.942330105634756E11
+AVG_62                            65.6732
+AVG_63              2.824553161423725E170
+AVG_64                                  0
+AVG_65                                  0
+AVG_66               3.353443713450332E39
+AVG_67                                  0
+AVG_68              1.0285929286280718E65
+AVG_69                                  0
+AVG_70                                  0
+AVG_71                            55.6075
+AVG_72                             0.0006
+STD_73                                  1
+STD_74                                  1
+STD_75                             0.0995
+STD_76                             0.8587
+STD_77                           Infinity
+STD_78                             1.3284
+STD_79                                  0
+STD_80              2.560649022719925E302
+STD_81                                  0
+STD_82                           Infinity
+STD_83                             1.2836
+STD_84                             0.9805
+STD_85                             0.2273
+STD_86                                  0
+STD_87                                  0
+STD_88                                  0
+STD_89                           Infinity
+STD_90                                  0
+STD_91                             0.0185
+STD_92                             0.1628
+STD_93                                  0
+STD_94              6.1000887078127155E18
+STD_95                            2642.18
+STD_96                                  0
+assessmentscore     3.6466987903487077E83
+
+
+Time taken to build model: 0.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3838               99.7142 %
+Incorrectly Classified Instances        11                0.2858 %
+Kappa statistic                          0.9725
+Mean absolute error                      0.0029
+Root mean squared error                  0.0522
+Relative absolute error                  2.8262 %
+Root relative squared error             23.0834 %
+Total Number of Instances             3849     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.990    0.002    0.958      0.990    0.974      0.973    0.999     0.956     spam
+                 0.998    0.010    0.999      0.998    0.998      0.973    0.998     1.000     nonspam
+Weighted Avg.    0.997    0.009    0.997      0.997    0.997      0.973    0.998     0.998     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  206    2 |    a = spam
+    9 3632 |    b = nonspam
+

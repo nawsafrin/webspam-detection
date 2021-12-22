@@ -1,0 +1,47 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     .\uk-2007-05.link_based_features_transformed.csv
+Instances:    3998
+Attributes:   140
+              [list of attributes omitted]
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 2.04 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         781               97.625  %
+Incorrectly Classified Instances        19                2.375  %
+Kappa statistic                          0.7646
+Mean absolute error                      0.0585
+Root mean squared error                  0.1315
+Relative absolute error                 52.4596 %
+Root relative squared error             53.2925 %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.635    0.000    1.000      0.635    0.776      0.787    1.000     1.000     spam
+                 1.000    0.365    0.975      1.000    0.987      0.787    1.000     1.000     nonspam
+Weighted Avg.    0.976    0.342    0.977      0.976    0.974      0.787    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  33  19 |   a = spam
+   0 748 |   b = nonspam
+

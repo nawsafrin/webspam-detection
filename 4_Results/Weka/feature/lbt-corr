@@ -1,0 +1,160 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     .\uk-2007-05.link_based_features_transformed.csv
+Instances:    3998
+Attributes:   138
+              [list of attributes omitted]
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 138 class):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.156363   118 log_OP_truncatedpagerank_1_mp_div_pagerank_mp_CP_
+ 0.151958   119 log_OP_truncatedpagerank_2_mp_div_pagerank_mp_CP_
+ 0.146725   120 log_OP_truncatedpagerank_3_mp_div_pagerank_mp_CP_
+ 0.144231    22 log_OP_outdegree_mp_div_pagerank_mp_CP_
+ 0.143884   121 log_OP_truncatedpagerank_4_mp_div_pagerank_mp_CP_
+ 0.143051     3 L_outdegree_mp
+ 0.141812     9 L_avgin_of_out_mp
+ 0.141398     8 L_avgin_of_out_hp
+ 0.141325    21 log_OP_outdegree_hp_div_pagerank_hp_CP_
+ 0.139862    11 log_OP_avgin_of_out_mp_mul_outdegree_mp_CP_
+ 0.139782     2 L_outdegree_hp
+ 0.138348    10 log_OP_avgin_of_out_hp_mul_outdegree_hp_CP_
+ 0.120679   117 log_OP_truncatedpagerank_4_hp_div_pagerank_hp_CP_
+ 0.120151   116 log_OP_truncatedpagerank_3_hp_div_pagerank_hp_CP_
+ 0.119352   115 log_OP_truncatedpagerank_2_hp_div_pagerank_hp_CP_
+ 0.116468   114 log_OP_truncatedpagerank_1_hp_div_pagerank_hp_CP_
+ 0.115844    23 L_prsigma_hp
+ 0.113857    24 L_prsigma_mp
+ 0.111893    25 log_OP_prsigma_hp_div_pagerank_hp_CP_
+ 0.111667   128 log_OP_min_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+ 0.110425    26 log_OP_prsigma_mp_div_pagerank_mp_CP_
+ 0.107022    40 L_siteneighbors_2_mp
+ 0.105435     1 L_indegree_mp
+ 0.105147    33 log_OP_trustrank_mp_div_indegree_mp_CP_
+ 0.103148    41 L_siteneighbors_3_mp
+ 0.101842    39 L_siteneighbors_1_mp
+ 0.09946     42 L_siteneighbors_4_mp
+ 0.099244    20 log_OP_indegree_mp_div_pagerank_mp_CP_
+ 0.099103    15 log_OP_avgout_of_in_mp_mul_indegree_mp_CP_
+ 0.097708    76 L_neighbors_2_mp
+ 0.096438    13 L_avgout_of_in_mp
+ 0.0953      77 L_neighbors_3_mp
+ 0.095162    78 L_neighbors_4_mp
+ 0.094517   132 log_OP_avg_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+ 0.093084    48 log_OP_siteneighbors_2_mp_div_pagerank_mp_CP_
+ 0.092087    82 log_OP_neighbors_2_mp_div_pagerank_mp_CP_
+ 0.091742   126 truncatedpagerank_2_hp_div_truncatedpagerank_1_hp
+ 0.091612    49 log_OP_siteneighbors_3_mp_div_pagerank_mp_CP_
+ 0.089785    50 log_OP_siteneighbors_4_mp_div_pagerank_mp_CP_
+ 0.089622    83 log_OP_neighbors_3_mp_div_pagerank_mp_CP_
+ 0.088579    84 log_OP_neighbors_4_mp_div_pagerank_mp_CP_
+ 0.08835    129 log_OP_min_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+ 0.088141    47 log_OP_siteneighbors_1_mp_div_pagerank_mp_CP_
+ 0.086474   127 truncatedpagerank_2_mp_div_truncatedpagerank_1_mp
+ 0.086117   113 L_truncatedpagerank_4_mp
+ 0.085231   112 L_truncatedpagerank_3_mp
+ 0.084333   111 L_truncatedpagerank_2_mp
+ 0.081686    14 log_OP_avgout_of_in_hp_mul_indegree_hp_CP_
+ 0.081623   110 L_truncatedpagerank_1_mp
+ 0.081247    67 log_OP__OP_siteneighbors_2_hp_m_siteneighbors_1_hp_CP__div_pagerank_hp_CP_
+ 0.080854    75 L_neighbors_4_hp
+ 0.080122    36 L_siteneighbors_2_hp
+ 0.079896    35 L_siteneighbors_1_hp
+ 0.079023    37 L_siteneighbors_3_hp
+ 0.079021    74 L_neighbors_3_hp
+ 0.078903   122 truncatedpagerank_4_hp_div_truncatedpagerank_3_hp
+ 0.07888     32 log_OP_trustrank_hp_div_indegree_hp_CP_
+ 0.078672   124 truncatedpagerank_3_hp_div_truncatedpagerank_2_hp
+ 0.07848    133 log_OP_avg_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+ 0.078227    68 log_OP__OP_siteneighbors_2_mp_m_siteneighbors_1_mp_CP__div_pagerank_mp_CP_
+ 0.077574    38 L_siteneighbors_4_hp
+ 0.077273    73 L_neighbors_2_hp
+ 0.07705     19 log_OP_indegree_hp_div_pagerank_hp_CP_
+ 0.07556     12 L_avgout_of_in_hp
+ 0.074087    81 log_OP_neighbors_4_hp_div_pagerank_hp_CP_
+ 0.073164   109 L_truncatedpagerank_4_hp
+ 0.073065    80 log_OP_neighbors_3_hp_div_pagerank_hp_CP_
+ 0.071933   108 L_truncatedpagerank_3_hp
+ 0.071871    79 log_OP_neighbors_2_hp_div_pagerank_hp_CP_
+ 0.071452    44 log_OP_siteneighbors_2_hp_div_pagerank_hp_CP_
+ 0.071355    45 log_OP_siteneighbors_3_hp_div_pagerank_hp_CP_
+ 0.07083     43 log_OP_siteneighbors_1_hp_div_pagerank_hp_CP_
+ 0.070698    46 log_OP_siteneighbors_4_hp_div_pagerank_hp_CP_
+ 0.07034    107 L_truncatedpagerank_2_hp
+ 0.067356   106 L_truncatedpagerank_1_hp
+ 0.066301   100 log_OP__OP_neighbors_3_mp_m_neighbors_2_mp_CP__div_pagerank_mp_CP_
+ 0.065966    29 L_trustrank_mp
+ 0.064312   123 truncatedpagerank_4_mp_div_truncatedpagerank_3_mp
+ 0.062936   130 log_OP_max_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+ 0.0629      99 log_OP__OP_neighbors_3_hp_m_neighbors_2_hp_CP__div_pagerank_hp_CP_
+ 0.06076     28 L_trustrank_hp
+ 0.060592    97 log_OP__OP_neighbors_4_hp_m_neighbors_3_hp_CP__div_pagerank_hp_CP_
+ 0.06022     98 log_OP__OP_neighbors_4_mp_m_neighbors_3_mp_CP__div_pagerank_mp_CP_
+ 0.058667   101 log_OP__OP_neighbors_2_hp_m_indegree_hp_CP__div_pagerank_hp_CP_
+ 0.057664   102 log_OP__OP_neighbors_2_mp_m_indegree_mp_CP__div_pagerank_mp_CP_
+ 0.057562    18 L_pagerank_mp
+ 0.05652    125 truncatedpagerank_3_mp_div_truncatedpagerank_2_mp
+ 0.052438    56 log_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_CP_
+ 0.051897   131 log_OP_max_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+ 0.051193    16 eq_hp_mp
+ 0.049012    17 L_pagerank_hp
+ 0.04772     57 log_OP_min_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+ 0.041379    69 siteneighbors_1_hp_div_siteneighbors_1_mp
+ 0.038353    30 log_OP_trustrank_hp_div_pagerank_hp_CP_
+ 0.036912    63 log_OP__OP_siteneighbors_4_hp_m_siteneighbors_3_hp_CP__div_pagerank_hp_CP_
+ 0.034588    31 log_OP_trustrank_mp_div_pagerank_mp_CP_
+ 0.03431     91 log_OP_min_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+ 0.033014    93 log_OP_max_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+ 0.032513     7 L_assortativity_mp
+ 0.031623    58 log_OP_min_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+ 0.029562    95 log_OP_avg_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+ 0.027621    92 log_OP_min_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+ 0.026913    87 log_OP_neighbors_3_hp_div_neighbors_2_hp_CP_
+ 0.026382    65 log_OP__OP_siteneighbors_3_hp_m_siteneighbors_2_hp_CP__div_pagerank_hp_CP_
+ 0.024849    85 log_OP_neighbors_4_hp_div_neighbors_3_hp_CP_
+ 0.024219    89 log_OP_neighbors_2_hp_div_indegree_hp_CP_
+ 0.020421     6 L_assortativity_hp
+ 0.020135    64 log_OP__OP_siteneighbors_4_mp_m_siteneighbors_3_mp_CP__div_pagerank_mp_CP_
+ 0.018916   105 neighbors_4_hp_div_neighbors_4_mp
+ 0.018559    55 log_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_CP_
+ 0.017997     5 reciprocity_mp
+ 0.017885    90 log_OP_neighbors_2_mp_div_indegree_mp_CP_
+ 0.015801    66 log_OP__OP_siteneighbors_3_mp_m_siteneighbors_2_mp_CP__div_pagerank_mp_CP_
+ 0.014145    70 siteneighbors_2_hp_div_siteneighbors_2_mp
+ 0.013705    71 siteneighbors_3_hp_div_siteneighbors_3_mp
+ 0.013228    86 log_OP_neighbors_4_mp_div_neighbors_3_mp_CP_
+ 0.0132      94 log_OP_max_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+ 0.013104    72 siteneighbors_4_hp_div_siteneighbors_4_mp
+ 0.013025   103 neighbors_2_hp_div_neighbors_2_mp
+ 0.012039   104 neighbors_3_hp_div_neighbors_3_mp
+ 0.010249    53 log_OP_siteneighbors_3_hp_div_siteneighbors_2_hp_CP_
+ 0.009506    88 log_OP_neighbors_3_mp_div_neighbors_2_mp_CP_
+ 0.009133    59 log_OP_max_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+ 0.008591    96 log_OP_avg_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+ 0.007862    60 log_OP_max_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+ 0.007362    62 log_OP_avg_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+ 0.006907    61 log_OP_avg_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+ 0.006854    51 log_OP_siteneighbors_4_hp_div_siteneighbors_3_hp_CP_
+ 0.004969   134 truncatedpagerank_1_mp_div_truncatedpagerank_1_hp
+ 0.004652   135 truncatedpagerank_2_mp_div_truncatedpagerank_2_hp
+ 0.004319   136 truncatedpagerank_3_mp_div_truncatedpagerank_3_hp
+ 0.004035   137 truncatedpagerank_4_mp_div_truncatedpagerank_4_hp
+ 0.003257    27 pagerank_mp_div_pagerank_hp
+ 0.002547     4 reciprocity_hp
+ 0.001881    34 trustrank_mp_div_trustrank_hp
+ 0.001431    54 log_OP_siteneighbors_3_mp_div_siteneighbors_2_mp_CP_
+ 0.000361    52 log_OP_siteneighbors_4_mp_div_siteneighbors_3_mp_CP_
+
+Selected attributes: 118,119,120,22,121,3,9,8,21,11,2,10,117,116,115,114,23,24,25,128,26,40,1,33,41,39,42,20,15,76,13,77,78,132,48,82,126,49,50,83,84,129,47,127,113,112,111,14,110,67,75,36,35,37,74,122,32,124,133,68,38,73,19,12,81,109,80,108,79,44,45,43,46,107,106,100,29,123,130,99,28,97,98,101,102,18,125,56,131,16,17,57,69,30,63,31,91,93,7,58,95,92,87,65,85,89,6,64,105,55,5,90,66,70,71,86,94,72,103,104,53,88,59,96,60,62,61,51,134,135,136,137,27,4,34,54,52 : 137
+

@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   44
+              hostid
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+              assessmentscore
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.89 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         800              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0316
+Root mean squared error                  0.0757
+Relative absolute error                 28.3656 %
+Root relative squared error             30.659  %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     spam
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     nonspam
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  52   0 |   a = spam
+   0 748 |   b = nonspam
+

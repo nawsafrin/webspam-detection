@@ -1,0 +1,880 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     .\uk-2007-05.link_based_features_transformed.csv
+Instances:    3998
+Attributes:   140
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                                                                                                                                                                                   Class
+Attribute                                                                                                                                                                           spam    nonspam
+                                                                                                                                                                                  (0.06)     (0.94)
+====================================================================================================================================================================================================
+hostid
+  mean                                                                                                                                                                         51223.3445 57356.1354
+  std. dev.                                                                                                                                                                    31912.8893 32716.9709
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        28.634     28.634
+
+L_indegree_mp
+  mean                                                                                                                                                                             0.2572      3.156
+  std. dev.                                                                                                                                                                       12.7985     5.6475
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0734     0.0734
+
+L_outdegree_hp
+  mean                                                                                                                                                                           -17.0857    -5.5045
+  std. dev.                                                                                                                                                                       25.3837    18.3188
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.4566     0.4566
+
+L_outdegree_mp
+  mean                                                                                                                                                                           -19.3129    -6.6419
+  std. dev.                                                                                                                                                                       25.9818    19.6907
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.383      0.383
+
+reciprocity_hp
+  mean                                                                                                                                                                             0.7274      0.723
+  std. dev.                                                                                                                                                                        0.3998     0.3947
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0031     0.0031
+
+reciprocity_mp
+  mean                                                                                                                                                                             0.8237     0.8468
+  std. dev.                                                                                                                                                                        0.3257     0.2924
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.003      0.003
+
+L_assortativity_hp
+  mean                                                                                                                                                                            -0.4389    -0.2484
+  std. dev.                                                                                                                                                                        2.5829     2.1059
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0052     0.0052
+
+L_assortativity_mp
+  mean                                                                                                                                                                            -0.1119     0.2035
+  std. dev.                                                                                                                                                                        2.7615     2.1848
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.005      0.005
+
+L_avgin_of_out_hp
+  mean                                                                                                                                                                           -16.2301    -4.1592
+  std. dev.                                                                                                                                                                        25.934    18.8938
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0303     0.0303
+
+L_avgin_of_out_mp
+  mean                                                                                                                                                                           -18.4534    -5.5525
+  std. dev.                                                                                                                                                                       26.6245    20.2152
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0289     0.0289
+
+log_OP_avgin_of_out_hp_mul_outdegree_hp_CP_
+  mean                                                                                                                                                                            -14.772    -2.4831
+  std. dev.                                                                                                                                                                       27.0996    19.6621
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0292     0.0292
+
+log_OP_avgin_of_out_mp_mul_outdegree_mp_CP_
+  mean                                                                                                                                                                           -16.9894    -3.6952
+  std. dev.                                                                                                                                                                       27.8971    21.1207
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0273     0.0273
+
+L_avgout_of_in_hp
+  mean                                                                                                                                                                            -0.3659     2.2121
+  std. dev.                                                                                                                                                                       13.3934      7.329
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0187     0.0187
+
+L_avgout_of_in_mp
+  mean                                                                                                                                                                            -0.1558     2.3349
+  std. dev.                                                                                                                                                                         12.48     5.2462
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0186     0.0186
+
+log_OP_avgout_of_in_hp_mul_indegree_hp_CP_
+  mean                                                                                                                                                                             2.6049     5.6824
+  std. dev.                                                                                                                                                                       14.4325     8.1257
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0213     0.0213
+
+log_OP_avgout_of_in_mp_mul_indegree_mp_CP_
+  mean                                                                                                                                                                             3.0298     5.9691
+  std. dev.                                                                                                                                                                       13.5642       6.13
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0215     0.0215
+
+eq_hp_mp
+  mean                                                                                                                                                                             0.7973     0.6949
+  std. dev.                                                                                                                                                                         0.402     0.4604
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                             1          1
+
+L_pagerank_hp
+  mean                                                                                                                                                                           -17.7267   -17.3216
+  std. dev.                                                                                                                                                                        2.3001     1.8635
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0028     0.0028
+
+L_pagerank_mp
+  mean                                                                                                                                                                           -17.4094   -16.9231
+  std. dev.                                                                                                                                                                        2.4445     1.8966
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0028     0.0028
+
+log_OP_indegree_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                             15.966    19.4552
+  std. dev.                                                                                                                                                                         17.79     9.7258
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.019      0.019
+
+log_OP_indegree_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            16.4948    19.8897
+  std. dev.                                                                                                                                                                       16.6181     6.9353
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0188     0.0188
+
+log_OP_outdegree_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -6.3382     9.1467
+  std. dev.                                                                                                                                                                       33.4592    24.2401
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0224     0.0224
+
+log_OP_outdegree_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -9.6351     7.1532
+  std. dev.                                                                                                                                                                        33.997    25.8611
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.023      0.023
+
+L_prsigma_hp
+  mean                                                                                                                                                                            -9.3552    -3.6371
+  std. dev.                                                                                                                                                                       17.6619    10.7305
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0183     0.0183
+
+L_prsigma_mp
+  mean                                                                                                                                                                            -9.6223    -3.8963
+  std. dev.                                                                                                                                                                       17.8503    10.9506
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0184     0.0184
+
+log_OP_prsigma_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                             5.2652    12.7159
+  std. dev.                                                                                                                                                                       24.0278    14.4622
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0188     0.0188
+
+log_OP_prsigma_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                             4.5814     12.038
+  std. dev.                                                                                                                                                                       24.1558    14.6898
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0188     0.0188
+
+pagerank_mp_div_pagerank_hp
+  mean                                                                                                                                                                             6.8456     9.2335
+  std. dev.                                                                                                                                                                       54.3516   177.0306
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        7.3063     7.3063
+
+L_trustrank_hp
+  mean                                                                                                                                                                           -18.7549   -18.0681
+  std. dev.                                                                                                                                                                        2.5607     2.5853
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0032     0.0032
+
+L_trustrank_mp
+  mean                                                                                                                                                                           -18.4628   -17.7415
+  std. dev.                                                                                                                                                                        2.6604     2.4884
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0032     0.0032
+
+log_OP_trustrank_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -1.0283    -0.7465
+  std. dev.                                                                                                                                                                        1.0477     1.7112
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0029     0.0029
+
+log_OP_trustrank_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -1.0533    -0.8184
+  std. dev.                                                                                                                                                                        1.0227     1.5808
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0029     0.0029
+
+log_OP_trustrank_hp_div_indegree_hp_CP_
+  mean                                                                                                                                                                           -23.6572    -22.085
+  std. dev.                                                                                                                                                                        7.2516     4.3391
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0102     0.0102
+
+log_OP_trustrank_mp_div_indegree_mp_CP_
+  mean                                                                                                                                                                           -23.3222   -21.6481
+  std. dev.                                                                                                                                                                        6.8104      3.346
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                          0.01       0.01
+
+trustrank_mp_div_trustrank_hp
+  mean                                                                                                                                                                            11.3848     9.8176
+  std. dev.                                                                                                                                                                      100.5769   190.3153
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        7.3047     7.3047
+
+L_siteneighbors_1_hp
+  mean                                                                                                                                                                            -2.5097    -0.1018
+  std. dev.                                                                                                                                                                       11.9028     6.7728
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         4.803      4.803
+
+L_siteneighbors_2_hp
+  mean                                                                                                                                                                            -1.4145     1.1975
+  std. dev.                                                                                                                                                                       12.4697     7.0004
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        1.6974     1.6974
+
+L_siteneighbors_3_hp
+  mean                                                                                                                                                                            -0.6355     2.0343
+  std. dev.                                                                                                                                                                       12.9374     7.3041
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.3712     0.3712
+
+L_siteneighbors_4_hp
+  mean                                                                                                                                                                             0.3652     3.0662
+  std. dev.                                                                                                                                                                       13.2029     7.5118
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.151      0.151
+
+L_siteneighbors_1_mp
+  mean                                                                                                                                                                            -2.1635     0.2035
+  std. dev.                                                                                                                                                                       11.0496     4.8076
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         4.803      4.803
+
+L_siteneighbors_2_mp
+  mean                                                                                                                                                                             -1.101     1.5104
+  std. dev.                                                                                                                                                                       11.5791     4.9556
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        1.6974     1.6974
+
+L_siteneighbors_3_mp
+  mean                                                                                                                                                                            -0.2996     2.3194
+  std. dev.                                                                                                                                                                        12.013     5.2006
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.3737     0.3737
+
+L_siteneighbors_4_mp
+  mean                                                                                                                                                                             0.6165     3.2345
+  std. dev.                                                                                                                                                                       12.2847     5.4223
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.155      0.155
+
+log_OP_siteneighbors_1_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            14.4926    17.5674
+  std. dev.                                                                                                                                                                       16.8451     9.3529
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0185     0.0185
+
+log_OP_siteneighbors_2_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            14.9566    18.0773
+  std. dev.                                                                                                                                                                       16.9494     9.4064
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0191     0.0191
+
+log_OP_siteneighbors_3_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            15.8273    18.9942
+  std. dev.                                                                                                                                                                        17.198     9.5614
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0194     0.0194
+
+log_OP_siteneighbors_4_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            16.8193    20.0137
+  std. dev.                                                                                                                                                                       17.4811     9.7374
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0198     0.0198
+
+log_OP_siteneighbors_1_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            14.6271    17.4922
+  std. dev.                                                                                                                                                                       15.6139     6.6225
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0183     0.0183
+
+log_OP_siteneighbors_2_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            15.1662    18.2072
+  std. dev.                                                                                                                                                                       15.7296     6.6472
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0189     0.0189
+
+log_OP_siteneighbors_3_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            16.0114    19.0573
+  std. dev.                                                                                                                                                                       15.9497     6.7765
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0191     0.0191
+
+log_OP_siteneighbors_4_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            16.9388    19.9867
+  std. dev.                                                                                                                                                                       16.2076     6.9309
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0196     0.0196
+
+log_OP_siteneighbors_4_hp_div_siteneighbors_3_hp_CP_
+  mean                                                                                                                                                                             0.9914     1.0192
+  std. dev.                                                                                                                                                                        1.0713     0.9254
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0032     0.0032
+
+log_OP_siteneighbors_4_mp_div_siteneighbors_3_mp_CP_
+  mean                                                                                                                                                                             0.9281     0.9296
+  std. dev.                                                                                                                                                                        1.0486     0.9209
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0035     0.0035
+
+log_OP_siteneighbors_3_hp_div_siteneighbors_2_hp_CP_
+  mean                                                                                                                                                                             0.8706     0.9167
+  std. dev.                                                                                                                                                                        1.1039       1.03
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0065     0.0065
+
+log_OP_siteneighbors_3_mp_div_siteneighbors_2_mp_CP_
+  mean                                                                                                                                                                             0.8436     0.8499
+  std. dev.                                                                                                                                                                         1.088     1.0079
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0066     0.0066
+
+log_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_CP_
+  mean                                                                                                                                                                             0.4648     0.5097
+  std. dev.                                                                                                                                                                        0.6547     0.5476
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0315     0.0315
+
+log_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_CP_
+  mean                                                                                                                                                                             0.5417     0.7171
+  std. dev.                                                                                                                                                                         0.712     0.7671
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0292     0.0292
+
+log_OP_min_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+  mean                                                                                                                                                                             0.1996     0.2791
+  std. dev.                                                                                                                                                                         0.323     0.3843
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0043     0.0043
+
+log_OP_min_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+  mean                                                                                                                                                                             0.2012      0.253
+  std. dev.                                                                                                                                                                        0.3365     0.3769
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0042     0.0042
+
+log_OP_max_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+  mean                                                                                                                                                                             1.5658     1.5234
+  std. dev.                                                                                                                                                                        1.2374     1.0514
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0041     0.0041
+
+log_OP_max_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+  mean                                                                                                                                                                             1.5725     1.6077
+  std. dev.                                                                                                                                                                        1.1989     1.0115
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0046     0.0046
+
+log_OP_avg_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+  mean                                                                                                                                                                             1.0768     1.0529
+  std. dev.                                                                                                                                                                          0.93     0.7832
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0018     0.0018
+
+log_OP_avg_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+  mean                                                                                                                                                                              1.067     1.0919
+  std. dev.                                                                                                                                                                        0.9055     0.7612
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0019     0.0019
+
+log_OP__OP_siteneighbors_4_hp_m_siteneighbors_3_hp_CP__div_pagerank_hp_CP_
+  mean                                                                                                                                                                               1.98     6.6405
+  std. dev.                                                                                                                                                                       31.7021    28.7238
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0244     0.0244
+
+log_OP__OP_siteneighbors_4_mp_m_siteneighbors_3_mp_CP__div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -0.2631     2.4602
+  std. dev.                                                                                                                                                                       32.4175    30.8784
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.026      0.026
+
+log_OP__OP_siteneighbors_3_hp_m_siteneighbors_2_hp_CP__div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -8.0679    -4.2108
+  std. dev.                                                                                                                                                                       34.3638    33.4137
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0291     0.0291
+
+log_OP__OP_siteneighbors_3_mp_m_siteneighbors_2_mp_CP__div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -9.5651    -7.2224
+  std. dev.                                                                                                                                                                       34.4097    33.9243
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0307     0.0307
+
+log_OP__OP_siteneighbors_2_hp_m_siteneighbors_1_hp_CP__div_pagerank_hp_CP_
+  mean                                                                                                                                                                           -10.5495     0.3055
+  std. dev.                                                                                                                                                                       33.8475    30.2855
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0256     0.0256
+
+log_OP__OP_siteneighbors_2_mp_m_siteneighbors_1_mp_CP__div_pagerank_mp_CP_
+  mean                                                                                                                                                                           -10.2622     0.1541
+  std. dev.                                                                                                                                                                       33.7711    30.1915
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0256     0.0256
+
+siteneighbors_1_hp_div_siteneighbors_1_mp
+  mean                                                                                                                                                                             1.6447     2.1297
+  std. dev.                                                                                                                                                                        2.1054      2.762
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.3696     0.3696
+
+siteneighbors_2_hp_div_siteneighbors_2_mp
+  mean                                                                                                                                                                             1.6252     1.8791
+  std. dev.                                                                                                                                                                         2.656     4.3308
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.3947     0.3947
+
+siteneighbors_3_hp_div_siteneighbors_3_mp
+  mean                                                                                                                                                                             2.2506     3.1683
+  std. dev.                                                                                                                                                                        7.7028    15.5822
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        1.3879     1.3879
+
+siteneighbors_4_hp_div_siteneighbors_4_mp
+  mean                                                                                                                                                                             1.7213     4.8319
+  std. dev.                                                                                                                                                                        8.4518    54.9809
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        3.5712     3.5712
+
+L_neighbors_2_hp
+  mean                                                                                                                                                                             1.6164     4.4073
+  std. dev.                                                                                                                                                                       13.6329     7.8179
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0564     0.0564
+
+L_neighbors_3_hp
+  mean                                                                                                                                                                             3.6253     6.5993
+  std. dev.                                                                                                                                                                       14.1492     8.1483
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0399     0.0399
+
+L_neighbors_4_hp
+  mean                                                                                                                                                                             5.4578     8.5822
+  std. dev.                                                                                                                                                                       14.6182     8.3555
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0391     0.0391
+
+L_neighbors_2_mp
+  mean                                                                                                                                                                             2.0118     4.7147
+  std. dev.                                                                                                                                                                       12.7137     5.7124
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0586     0.0586
+
+L_neighbors_3_mp
+  mean                                                                                                                                                                             3.7919     6.5575
+  std. dev.                                                                                                                                                                       13.1643     6.0167
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0414     0.0414
+
+L_neighbors_4_mp
+  mean                                                                                                                                                                             5.5856     8.4339
+  std. dev.                                                                                                                                                                       13.5957     6.1993
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0382     0.0382
+
+log_OP_neighbors_2_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            18.0736    21.3614
+  std. dev.                                                                                                                                                                       17.7275     9.8557
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0202     0.0202
+
+log_OP_neighbors_3_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            20.0801    23.5518
+  std. dev.                                                                                                                                                                       18.3117    10.2474
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0207     0.0207
+
+log_OP_neighbors_4_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            21.9152    25.5362
+  std. dev.                                                                                                                                                                       18.8276    10.5403
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0211     0.0211
+
+log_OP_neighbors_2_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            18.3325    21.4633
+  std. dev.                                                                                                                                                                       16.4232     6.9118
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                          0.02       0.02
+
+log_OP_neighbors_3_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            20.1104    23.3048
+  std. dev.                                                                                                                                                                       16.9336     7.2875
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0205     0.0205
+
+log_OP_neighbors_4_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            21.9045    25.1807
+  std. dev.                                                                                                                                                                       17.4393     7.5798
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0209     0.0209
+
+log_OP_neighbors_4_hp_div_neighbors_3_hp_CP_
+  mean                                                                                                                                                                             1.8346     1.9842
+  std. dev.                                                                                                                                                                        1.4689     1.3726
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0024     0.0024
+
+log_OP_neighbors_4_mp_div_neighbors_3_mp_CP_
+  mean                                                                                                                                                                             1.7944     1.8759
+  std. dev.                                                                                                                                                                        1.5132     1.4037
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0026     0.0026
+
+log_OP_neighbors_3_hp_div_neighbors_2_hp_CP_
+  mean                                                                                                                                                                             2.0067     2.1906
+  std. dev.                                                                                                                                                                        1.6686     1.5581
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+log_OP_neighbors_3_mp_div_neighbors_2_mp_CP_
+  mean                                                                                                                                                                              1.778     1.8417
+  std. dev.                                                                                                                                                                        1.6554     1.5255
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0027     0.0027
+
+log_OP_neighbors_2_hp_div_indegree_hp_CP_
+  mean                                                                                                                                                                              1.573     1.8114
+  std. dev.                                                                                                                                                                        3.8476     2.1106
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0228     0.0228
+
+log_OP_neighbors_2_mp_div_indegree_mp_CP_
+  mean                                                                                                                                                                             1.3051     1.4788
+  std. dev.                                                                                                                                                                        3.8029     2.0978
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0232     0.0232
+
+log_OP_min_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+  mean                                                                                                                                                                             0.5667     0.8257
+  std. dev.                                                                                                                                                                        3.4669     1.5657
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0191     0.0191
+
+log_OP_min_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+  mean                                                                                                                                                                             0.4638     0.6714
+  std. dev.                                                                                                                                                                        3.4571     1.5576
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                          0.02       0.02
+
+log_OP_max_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+  mean                                                                                                                                                                             3.1387     3.3588
+  std. dev.                                                                                                                                                                        1.7999     1.5084
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0031     0.0031
+
+log_OP_max_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+  mean                                                                                                                                                                             2.9013     2.9959
+  std. dev.                                                                                                                                                                        1.8536     1.6256
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.003      0.003
+
+log_OP_avg_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+  mean                                                                                                                                                                             2.4995     2.6672
+  std. dev.                                                                                                                                                                        1.5385     1.2827
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0027     0.0027
+
+log_OP_avg_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+  mean                                                                                                                                                                             2.2862     2.3385
+  std. dev.                                                                                                                                                                        1.5759     1.3817
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0026     0.0026
+
+log_OP__OP_neighbors_4_hp_m_neighbors_3_hp_CP__div_pagerank_hp_CP_
+  mean                                                                                                                                                                            18.9317    23.2796
+  std. dev.                                                                                                                                                                       23.0146    15.9274
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0216     0.0216
+
+log_OP__OP_neighbors_4_mp_m_neighbors_3_mp_CP__div_pagerank_mp_CP_
+  mean                                                                                                                                                                             16.998    21.6332
+  std. dev.                                                                                                                                                                       24.5818    17.0943
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0218     0.0218
+
+log_OP__OP_neighbors_3_hp_m_neighbors_2_hp_CP__div_pagerank_hp_CP_
+  mean                                                                                                                                                                            17.0827    21.4363
+  std. dev.                                                                                                                                                                       22.3823    15.3437
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0213     0.0213
+
+log_OP__OP_neighbors_3_mp_m_neighbors_2_mp_CP__div_pagerank_mp_CP_
+  mean                                                                                                                                                                            15.1288    19.9473
+  std. dev.                                                                                                                                                                       23.8747    16.0751
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0213     0.0213
+
+log_OP__OP_neighbors_2_hp_m_indegree_hp_CP__div_pagerank_hp_CP_
+  mean                                                                                                                                                                            15.6857    19.4317
+  std. dev.                                                                                                                                                                       20.7601    14.1519
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0206     0.0206
+
+log_OP__OP_neighbors_2_mp_m_indegree_mp_CP__div_pagerank_mp_CP_
+  mean                                                                                                                                                                            13.0048     17.356
+  std. dev.                                                                                                                                                                        23.535    16.8061
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0211     0.0211
+
+neighbors_2_hp_div_neighbors_2_mp
+  mean                                                                                                                                                                             2.5023     4.9063
+  std. dev.                                                                                                                                                                          4.31    45.4158
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        1.9629     1.9629
+
+neighbors_3_hp_div_neighbors_3_mp
+  mean                                                                                                                                                                               9.57    28.3047
+  std. dev.                                                                                                                                                                      102.0495   363.8244
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                       14.1636    14.1636
+
+neighbors_4_hp_div_neighbors_4_mp
+  mean                                                                                                                                                                              8.695     61.315
+  std. dev.                                                                                                                                                                       54.0175   653.0047
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                       18.2103    18.2103
+
+L_truncatedpagerank_1_hp
+  mean                                                                                                                                                                           -18.1385   -17.4733
+  std. dev.                                                                                                                                                                        2.7684     2.2228
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+L_truncatedpagerank_2_hp
+  mean                                                                                                                                                                           -18.2123    -17.502
+  std. dev.                                                                                                                                                                        2.8135     2.2736
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+L_truncatedpagerank_3_hp
+  mean                                                                                                                                                                           -18.2591   -17.5235
+  std. dev.                                                                                                                                                                        2.8385     2.3031
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+L_truncatedpagerank_4_hp
+  mean                                                                                                                                                                           -18.2943   -17.5393
+  std. dev.                                                                                                                                                                         2.858     2.3248
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+L_truncatedpagerank_1_mp
+  mean                                                                                                                                                                           -17.7732   -16.9846
+  std. dev.                                                                                                                                                                        2.8648     2.1601
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0032     0.0032
+
+L_truncatedpagerank_2_mp
+  mean                                                                                                                                                                             -17.84   -17.0078
+  std. dev.                                                                                                                                                                        2.9205     2.2059
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0032     0.0032
+
+L_truncatedpagerank_3_mp
+  mean                                                                                                                                                                           -17.8801   -17.0288
+  std. dev.                                                                                                                                                                        2.9467     2.2333
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+L_truncatedpagerank_4_mp
+  mean                                                                                                                                                                           -17.9083   -17.0401
+  std. dev.                                                                                                                                                                        2.9691     2.2543
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0033     0.0033
+
+log_OP_truncatedpagerank_1_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -0.4118    -0.1517
+  std. dev.                                                                                                                                                                        0.6316     0.4998
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0005     0.0005
+
+log_OP_truncatedpagerank_2_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -0.4857    -0.1804
+  std. dev.                                                                                                                                                                        0.7136     0.5728
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0006     0.0006
+
+log_OP_truncatedpagerank_3_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -0.5324    -0.2018
+  std. dev.                                                                                                                                                                         0.764     0.6164
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0007     0.0007
+
+log_OP_truncatedpagerank_4_hp_div_pagerank_hp_CP_
+  mean                                                                                                                                                                            -0.5678    -0.2176
+  std. dev.                                                                                                                                                                        0.8016     0.6504
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0007     0.0007
+
+log_OP_truncatedpagerank_1_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -0.3638    -0.0614
+  std. dev.                                                                                                                                                                        0.6262     0.4237
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0005     0.0005
+
+log_OP_truncatedpagerank_2_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -0.4306    -0.0847
+  std. dev.                                                                                                                                                                        0.7183     0.5007
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0006     0.0006
+
+log_OP_truncatedpagerank_3_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -0.4707    -0.1057
+  std. dev.                                                                                                                                                                        0.7698      0.549
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0007     0.0007
+
+log_OP_truncatedpagerank_4_mp_div_pagerank_mp_CP_
+  mean                                                                                                                                                                            -0.4988     -0.117
+  std. dev.                                                                                                                                                                        0.8089      0.587
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0007     0.0007
+
+truncatedpagerank_4_hp_div_truncatedpagerank_3_hp
+  mean                                                                                                                                                                             0.9674     0.9857
+  std. dev.                                                                                                                                                                        0.0642     0.0524
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0001     0.0001
+
+truncatedpagerank_4_mp_div_truncatedpagerank_3_mp
+  mean                                                                                                                                                                             0.9743     0.9904
+  std. dev.                                                                                                                                                                        0.0643     0.0568
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0001     0.0001
+
+truncatedpagerank_3_hp_div_truncatedpagerank_2_hp
+  mean                                                                                                                                                                              0.958     0.9812
+  std. dev.                                                                                                                                                                        0.0829     0.0661
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+truncatedpagerank_3_mp_div_truncatedpagerank_2_mp
+  mean                                                                                                                                                                             0.9642     0.9821
+  std. dev.                                                                                                                                                                        0.0816     0.0718
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+truncatedpagerank_2_hp_div_truncatedpagerank_1_hp
+  mean                                                                                                                                                                             0.9382     0.9765
+  std. dev.                                                                                                                                                                        0.1257      0.093
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+truncatedpagerank_2_mp_div_truncatedpagerank_1_mp
+  mean                                                                                                                                                                             0.9447     0.9827
+  std. dev.                                                                                                                                                                        0.1256     0.0987
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+log_OP_min_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+  mean                                                                                                                                                                            -0.0971    -0.0491
+  std. dev.                                                                                                                                                                        0.1347     0.0953
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+log_OP_min_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+  mean                                                                                                                                                                            -0.0899    -0.0471
+  std. dev.                                                                                                                                                                        0.1325     0.1092
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0003     0.0003
+
+log_OP_max_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+  mean                                                                                                                                                                            -0.0151     0.0018
+  std. dev.                                                                                                                                                                        0.0762     0.0605
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0001     0.0001
+
+log_OP_max_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+  mean                                                                                                                                                                            -0.0089     0.0055
+  std. dev.                                                                                                                                                                        0.0744     0.0628
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0001     0.0001
+
+log_OP_avg_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+  mean                                                                                                                                                                            -0.0506    -0.0214
+  std. dev.                                                                                                                                                                        0.0908      0.069
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+log_OP_avg_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+  mean                                                                                                                                                                            -0.0436    -0.0177
+  std. dev.                                                                                                                                                                        0.0891     0.0745
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                        0.0002     0.0002
+
+truncatedpagerank_1_mp_div_truncatedpagerank_1_hp
+  mean                                                                                                                                                                             12.873    32.6294
+  std. dev.                                                                                                                                                                       95.3859   941.0836
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                       46.0938    46.0938
+
+truncatedpagerank_2_mp_div_truncatedpagerank_2_hp
+  mean                                                                                                                                                                            15.9919    38.0928
+  std. dev.                                                                                                                                                                      120.8436  1126.9428
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                       55.4718    55.4718
+
+truncatedpagerank_3_mp_div_truncatedpagerank_3_hp
+  mean                                                                                                                                                                            18.8496      41.02
+  std. dev.                                                                                                                                                                      148.4169  1230.9668
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                       60.6467    60.6467
+
+truncatedpagerank_4_mp_div_truncatedpagerank_4_hp
+  mean                                                                                                                                                                            21.3224     43.687
+  std. dev.                                                                                                                                                                      174.4607  1315.3398
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                       64.8435    64.8435
+
+assessmentscore
+  mean                                                                                                                                                                             0.9254     0.0168
+  std. dev.                                                                                                                                                                        0.1225      0.063
+  weight sum                                                                                                                                                                          222       3776
+  precision                                                                                                                                                                         0.027      0.027
+
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3765               94.1721 %
+Incorrectly Classified Instances       233                5.8279 %
+Kappa statistic                          0.6194
+Mean absolute error                      0.0579
+Root mean squared error                  0.2359
+Relative absolute error                 55.0701 %
+Root relative squared error            103.0309 %
+Total Number of Instances             3998     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.964    0.060    0.487      0.964    0.648      0.662    0.966     0.697     spam
+                 0.940    0.036    0.998      0.940    0.968      0.662    0.968     0.997     nonspam
+Weighted Avg.    0.942    0.037    0.969      0.942    0.950      0.662    0.968     0.981     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  214    8 |    a = spam
+  225 3551 |    b = nonspam
+
