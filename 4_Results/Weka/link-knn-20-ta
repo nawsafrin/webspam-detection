@@ -1,0 +1,88 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 20 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   44
+              hostid
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+              assessmentscore
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 20 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.36 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         794               99.25   %
+Incorrectly Classified Instances         6                0.75   %
+Kappa statistic                          0.9348
+Mean absolute error                      0.0115
+Root mean squared error                  0.0784
+Relative absolute error                 10.3285 %
+Root relative squared error             31.7758 %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.885    0.000    1.000      0.885    0.939      0.937    0.990     0.981     spam
+                 1.000    0.115    0.992      1.000    0.996      0.937    0.990     0.999     nonspam
+Weighted Avg.    0.993    0.108    0.993      0.993    0.992      0.937    0.990     0.998     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  46   6 |   a = spam
+   0 748 |   b = nonspam
+

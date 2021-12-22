@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     .\uk-2007-05.obvious_features.csv
+Instances:    3998
+Attributes:   5
+              hostid
+              number_of_pages
+              length_of_hostname
+              class
+              assessmentscore
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                  spam    nonspam
+                         (0.06)     (0.94)
+===========================================
+hostid
+  mean                51223.3445 57356.1354
+  std. dev.           31912.8893 32716.9709
+  weight sum                 222       3776
+  precision               28.634     28.634
+
+number_of_pages
+  mean                 2035.1856   951.9953
+  std. dev.            7690.2148  4712.9007
+  weight sum                 222       3776
+  precision              60.9732    60.9732
+
+length_of_hostname
+  mean                   23.1209    22.5748
+  std. dev.               6.4265     5.3349
+  weight sum                 222       3776
+  precision               1.8947     1.8947
+
+assessmentscore
+  mean                    0.9254     0.0168
+  std. dev.               0.1225      0.063
+  weight sum                 222       3776
+  precision                0.027      0.027
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         797               99.625  %
+Incorrectly Classified Instances         3                0.375  %
+Kappa statistic                          0.97  
+Mean absolute error                      0.004 
+Root mean squared error                  0.0609
+Relative absolute error                  3.5879 %
+Root relative squared error             24.6791 %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.004    0.945      1.000    0.972      0.970    0.999     0.963     spam
+                 0.996    0.000    1.000      0.996    0.998      0.970    1.000     1.000     nonspam
+Weighted Avg.    0.996    0.000    0.996      0.996    0.996      0.970    1.000     0.998     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  52   0 |   a = spam
+   3 745 |   b = nonspam
+

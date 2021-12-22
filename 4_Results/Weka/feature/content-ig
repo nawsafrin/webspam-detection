@@ -1,0 +1,216 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     .\uk-2007-05.content_based_features.csv
+Instances:    3849
+Attributes:   97
+              HST_1
+              HST_2
+              HST_3
+              HST_4
+              HST_5
+              HST_6
+              HST_7
+              HST_8
+              HST_9
+              HST_10
+              HST_11
+              HST_12
+              HST_13
+              HST_14
+              HST_15
+              HST_16
+              HST_17
+              HST_18
+              HST_19
+              HST_20
+              HST_21
+              HST_22
+              HST_23
+              HST_24
+              HMG_25
+              HMG_26
+              HMG_27
+              HMG_28
+              HMG_29
+              HMG_30
+              HMG_31
+              HMG_32
+              HMG_33
+              HMG_34
+              HMG_35
+              HMG_36
+              HMG_37
+              HMG_38
+              HMG_39
+              HMG_40
+              HMG_41
+              HMG_42
+              HMG_43
+              HMG_44
+              HMG_45
+              HMG_46
+              HMG_47
+              HMG_48
+              AVG_49
+              AVG_50
+              AVG_51
+              AVG_52
+              AVG_53
+              AVG_54
+              AVG_55
+              AVG_56
+              AVG_57
+              AVG_58
+              AVG_59
+              AVG_60
+              AVG_61
+              AVG_62
+              AVG_63
+              AVG_64
+              AVG_65
+              AVG_66
+              AVG_67
+              AVG_68
+              AVG_69
+              AVG_70
+              AVG_71
+              AVG_72
+              STD_73
+              STD_74
+              STD_75
+              STD_76
+              STD_77
+              STD_78
+              STD_79
+              STD_80
+              STD_81
+              STD_82
+              STD_83
+              STD_84
+              STD_85
+              STD_86
+              STD_87
+              STD_88
+              STD_89
+              STD_90
+              STD_91
+              STD_92
+              STD_93
+              STD_94
+              STD_95
+              STD_96
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 97 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.02245    64 AVG_64
+ 0.02215    68 AVG_68
+ 0.0206     96 STD_96
+ 0.02028    95 STD_95
+ 0.01925    67 AVG_67
+ 0.0185     20 HST_20
+ 0.01806    41 HMG_41
+ 0.0178     76 STD_76
+ 0.0178     53 AVG_53
+ 0.01778    19 HST_19
+ 0.01713    65 AVG_65
+ 0.01613    73 STD_73
+ 0.01611    77 STD_77
+ 0.01585    43 HMG_43
+ 0.01548    66 AVG_66
+ 0.01544    69 AVG_69
+ 0.01533    59 AVG_59
+ 0.01525    75 STD_75
+ 0.01523    82 STD_82
+ 0.01509    33 HMG_33
+ 0.01478    50 AVG_50
+ 0.01405    86 STD_86
+ 0.01396    44 HMG_44
+ 0.01391    55 AVG_55
+ 0.01387    81 STD_81
+ 0.01336    60 AVG_60
+ 0.01336    11 HST_11
+ 0.01332    80 STD_80
+ 0.01326    18 HST_18
+ 0.01317    58 AVG_58
+ 0.01316    79 STD_79
+ 0.01314    78 STD_78
+ 0.01293    83 STD_83
+ 0.01275    16 HST_16
+ 0.01256    85 STD_85
+ 0.01251    70 AVG_70
+ 0.01216    10 HST_10
+ 0.01208    21 HST_21
+ 0.01197    84 STD_84
+ 0.01189    90 STD_90
+ 0.01185    88 STD_88
+ 0.0118     40 HMG_40
+ 0.01179    17 HST_17
+ 0.0117     42 HMG_42
+ 0.01168    34 HMG_34
+ 0.01155    61 AVG_61
+ 0.01153    92 STD_92
+ 0.01146    45 HMG_45
+ 0.01143    94 STD_94
+ 0.0113     89 STD_89
+ 0.01114     9 HST_9
+ 0.01109    87 STD_87
+ 0.01108    22 HST_22
+ 0.01098    91 STD_91
+ 0.01088    93 STD_93
+ 0.01047     7 HST_7
+ 0.01028    56 AVG_56
+ 0.01018    63 AVG_63
+ 0.01017    71 AVG_71
+ 0.00976    46 HMG_46
+ 0.00959    74 STD_74
+ 0.00951    62 AVG_62
+ 0.00925    31 HMG_31
+ 0.00917    12 HST_12
+ 0.00911    72 AVG_72
+ 0.00901    32 HMG_32
+ 0.00889     8 HST_8
+ 0.00853    57 AVG_57
+ 0.00843     2 HST_2
+ 0.00831    26 HMG_26
+ 0.00788    13 HST_13
+ 0.00768    36 HMG_36
+ 0.00717    38 HMG_38
+ 0.00714    14 HST_14
+ 0.00689    35 HMG_35
+ 0.00552     5 HST_5
+ 0.00513     6 HST_6
+ 0.00498    15 HST_15
+ 0.00439    48 HMG_48
+ 0.00439    24 HST_24
+ 0.00422    37 HMG_37
+ 0.00381     1 HST_1
+ 0           3 HST_3
+ 0          49 AVG_49
+ 0          54 AVG_54
+ 0          51 AVG_51
+ 0          52 AVG_52
+ 0           4 HST_4
+ 0          23 HST_23
+ 0          47 HMG_47
+ 0          27 HMG_27
+ 0          25 HMG_25
+ 0          28 HMG_28
+ 0          30 HMG_30
+ 0          29 HMG_29
+ 0          39 HMG_39
+
+Selected attributes: 64,68,96,95,67,20,41,76,53,19,65,73,77,43,66,69,59,75,82,33,50,86,44,55,81,60,11,80,18,58,79,78,83,16,85,70,10,21,84,90,88,40,17,42,34,61,92,45,94,89,9,87,22,91,93,7,56,63,71,46,74,62,31,12,72,32,8,57,2,26,13,36,38,14,35,5,6,15,48,24,37,1,3,49,54,51,52,4,23,47,27,25,28,30,29,39 : 96
+

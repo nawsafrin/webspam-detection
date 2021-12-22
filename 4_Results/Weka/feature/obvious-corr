@@ -1,0 +1,27 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CorrelationAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     .\uk-2007-05.obvious_features.csv
+Instances:    3998
+Attributes:   3
+              number_of_pages
+              length_of_hostname
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 3 class):
+	Correlation Ranking Filter
+Ranked attributes:
+ 0.0502  1 number_of_pages
+ 0.0222  2 length_of_hostname
+
+Selected attributes: 1,2 : 2
+
