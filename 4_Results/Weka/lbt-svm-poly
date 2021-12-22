@@ -1,0 +1,194 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     .\uk-2007-05.link_based_features_transformed.csv
+Instances:    3998
+Attributes:   140
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: spam, nonspam
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.035  * (normalized) hostid
+ +       0.0089 * (normalized) L_indegree_mp
+ +       0.0145 * (normalized) L_outdegree_hp
+ +      -0.0528 * (normalized) L_outdegree_mp
+ +      -0.0307 * (normalized) reciprocity_hp
+ +      -0.1215 * (normalized) reciprocity_mp
+ +      -0.2755 * (normalized) L_assortativity_hp
+ +      -0.2475 * (normalized) L_assortativity_mp
+ +      -0.0232 * (normalized) L_avgin_of_out_hp
+ +      -0.1116 * (normalized) L_avgin_of_out_mp
+ +       0.0593 * (normalized) log_OP_avgin_of_out_hp_mul_outdegree_hp_CP_
+ +      -0.041  * (normalized) log_OP_avgin_of_out_mp_mul_outdegree_mp_CP_
+ +       0.0331 * (normalized) L_avgout_of_in_hp
+ +      -0.0379 * (normalized) L_avgout_of_in_mp
+ +       0.0797 * (normalized) log_OP_avgout_of_in_hp_mul_indegree_hp_CP_
+ +      -0.0243 * (normalized) log_OP_avgout_of_in_mp_mul_indegree_mp_CP_
+ +      -0.0132 * (normalized) eq_hp_mp
+ +       0.0778 * (normalized) L_pagerank_hp
+ +       0.0292 * (normalized) L_pagerank_mp
+ +       0.0459 * (normalized) log_OP_indegree_hp_div_pagerank_hp_CP_
+ +       0.0031 * (normalized) log_OP_indegree_mp_div_pagerank_mp_CP_
+ +      -0.0043 * (normalized) log_OP_outdegree_hp_div_pagerank_hp_CP_
+ +      -0.0623 * (normalized) log_OP_outdegree_mp_div_pagerank_mp_CP_
+ +       0.0005 * (normalized) L_prsigma_hp
+ +       0.0861 * (normalized) L_prsigma_mp
+ +      -0.0334 * (normalized) log_OP_prsigma_hp_div_pagerank_hp_CP_
+ +       0.0887 * (normalized) log_OP_prsigma_mp_div_pagerank_mp_CP_
+ +      -0.0173 * (normalized) pagerank_mp_div_pagerank_hp
+ +      -0.0187 * (normalized) L_trustrank_hp
+ +      -0.0688 * (normalized) L_trustrank_mp
+ +      -0.0945 * (normalized) log_OP_trustrank_hp_div_pagerank_hp_CP_
+ +      -0.104  * (normalized) log_OP_trustrank_mp_div_pagerank_mp_CP_
+ +      -0.0813 * (normalized) log_OP_trustrank_hp_div_indegree_hp_CP_
+ +      -0.0358 * (normalized) log_OP_trustrank_mp_div_indegree_mp_CP_
+ +      -0.0174 * (normalized) trustrank_mp_div_trustrank_hp
+ +      -0.0215 * (normalized) L_siteneighbors_1_hp
+ +      -0.0397 * (normalized) L_siteneighbors_2_hp
+ +      -0.0207 * (normalized) L_siteneighbors_3_hp
+ +      -0.0124 * (normalized) L_siteneighbors_4_hp
+ +      -0.0778 * (normalized) L_siteneighbors_1_mp
+ +      -0.0636 * (normalized) L_siteneighbors_2_mp
+ +      -0.0606 * (normalized) L_siteneighbors_3_mp
+ +      -0.0563 * (normalized) L_siteneighbors_4_mp
+ +      -0.024  * (normalized) log_OP_siteneighbors_1_hp_div_pagerank_hp_CP_
+ +      -0.037  * (normalized) log_OP_siteneighbors_2_hp_div_pagerank_hp_CP_
+ +      -0.0233 * (normalized) log_OP_siteneighbors_3_hp_div_pagerank_hp_CP_
+ +      -0.017  * (normalized) log_OP_siteneighbors_4_hp_div_pagerank_hp_CP_
+ +      -0.0615 * (normalized) log_OP_siteneighbors_1_mp_div_pagerank_mp_CP_
+ +      -0.0508 * (normalized) log_OP_siteneighbors_2_mp_div_pagerank_mp_CP_
+ +      -0.0496 * (normalized) log_OP_siteneighbors_3_mp_div_pagerank_mp_CP_
+ +      -0.0463 * (normalized) log_OP_siteneighbors_4_mp_div_pagerank_mp_CP_
+ +       0.0805 * (normalized) log_OP_siteneighbors_4_hp_div_siteneighbors_3_hp_CP_
+ +       0.0291 * (normalized) log_OP_siteneighbors_4_mp_div_siteneighbors_3_mp_CP_
+ +       0.1697 * (normalized) log_OP_siteneighbors_3_hp_div_siteneighbors_2_hp_CP_
+ +       0.0063 * (normalized) log_OP_siteneighbors_3_mp_div_siteneighbors_2_mp_CP_
+ +      -0.2151 * (normalized) log_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_CP_
+ +       0.1389 * (normalized) log_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_CP_
+ +      -0.0514 * (normalized) log_OP_min_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+ +      -0.0766 * (normalized) log_OP_min_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+ +      -0.1395 * (normalized) log_OP_max_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+ +      -0.2062 * (normalized) log_OP_max_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+ +      -0.0954 * (normalized) log_OP_avg_OP_siteneighbors_2_hp_div_siteneighbors_1_hp_siteneighbors_3_hp_div_siteneighbors_2_hp_siteneighbors_4_hp_div_siteneighbors_3_hp_CP__CP_
+ +      -0.1165 * (normalized) log_OP_avg_OP_siteneighbors_2_mp_div_siteneighbors_1_mp_siteneighbors_3_mp_div_siteneighbors_2_mp_siteneighbors_4_mp_div_siteneighbors_3_mp_CP__CP_
+ +      -0.0033 * (normalized) log_OP__OP_siteneighbors_4_hp_m_siteneighbors_3_hp_CP__div_pagerank_hp_CP_
+ +      -0.0829 * (normalized) log_OP__OP_siteneighbors_4_mp_m_siteneighbors_3_mp_CP__div_pagerank_mp_CP_
+ +       0.0031 * (normalized) log_OP__OP_siteneighbors_3_hp_m_siteneighbors_2_hp_CP__div_pagerank_hp_CP_
+ +       0.1006 * (normalized) log_OP__OP_siteneighbors_3_mp_m_siteneighbors_2_mp_CP__div_pagerank_mp_CP_
+ +       0.1735 * (normalized) log_OP__OP_siteneighbors_2_hp_m_siteneighbors_1_hp_CP__div_pagerank_hp_CP_
+ +       0.0931 * (normalized) log_OP__OP_siteneighbors_2_mp_m_siteneighbors_1_mp_CP__div_pagerank_mp_CP_
+ +       0.0987 * (normalized) siteneighbors_1_hp_div_siteneighbors_1_mp
+ +       0.0076 * (normalized) siteneighbors_2_hp_div_siteneighbors_2_mp
+ +      -0.0025 * (normalized) siteneighbors_3_hp_div_siteneighbors_3_mp
+ +       0.0006 * (normalized) siteneighbors_4_hp_div_siteneighbors_4_mp
+ +      -0.0721 * (normalized) L_neighbors_2_hp
+ +      -0.064  * (normalized) L_neighbors_3_hp
+ +      -0.0519 * (normalized) L_neighbors_4_hp
+ +      -0.1391 * (normalized) L_neighbors_2_mp
+ +      -0.111  * (normalized) L_neighbors_3_mp
+ +      -0.1231 * (normalized) L_neighbors_4_mp
+ +      -0.0642 * (normalized) log_OP_neighbors_2_hp_div_pagerank_hp_CP_
+ +      -0.0569 * (normalized) log_OP_neighbors_3_hp_div_pagerank_hp_CP_
+ +      -0.0471 * (normalized) log_OP_neighbors_4_hp_div_pagerank_hp_CP_
+ +      -0.1135 * (normalized) log_OP_neighbors_2_mp_div_pagerank_mp_CP_
+ +      -0.0903 * (normalized) log_OP_neighbors_3_mp_div_pagerank_mp_CP_
+ +      -0.0986 * (normalized) log_OP_neighbors_4_mp_div_pagerank_mp_CP_
+ +       0.0847 * (normalized) log_OP_neighbors_4_hp_div_neighbors_3_hp_CP_
+ +      -0.0957 * (normalized) log_OP_neighbors_4_mp_div_neighbors_3_mp_CP_
+ +       0.0398 * (normalized) log_OP_neighbors_3_hp_div_neighbors_2_hp_CP_
+ +       0.1877 * (normalized) log_OP_neighbors_3_mp_div_neighbors_2_mp_CP_
+ +      -0.139  * (normalized) log_OP_neighbors_2_hp_div_indegree_hp_CP_
+ +      -0.1507 * (normalized) log_OP_neighbors_2_mp_div_indegree_mp_CP_
+ +      -0.038  * (normalized) log_OP_min_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+ +      -0.0549 * (normalized) log_OP_min_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+ +       0.1013 * (normalized) log_OP_max_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+ +      -0.0759 * (normalized) log_OP_max_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+ +       0.0059 * (normalized) log_OP_avg_OP_neighbors_2_hp_div_indegree_hp_neighbors_3_hp_div_neighbors_2_hp_neighbors_4_hp_div_neighbors_3_hp_CP__CP_
+ +      -0.0992 * (normalized) log_OP_avg_OP_neighbors_2_mp_div_indegree_mp_neighbors_3_mp_div_neighbors_2_mp_neighbors_4_mp_div_neighbors_3_mp_CP__CP_
+ +      -0.1104 * (normalized) log_OP__OP_neighbors_4_hp_m_neighbors_3_hp_CP__div_pagerank_hp_CP_
+ +      -0.1382 * (normalized) log_OP__OP_neighbors_4_mp_m_neighbors_3_mp_CP__div_pagerank_mp_CP_
+ +      -0.1066 * (normalized) log_OP__OP_neighbors_3_hp_m_neighbors_2_hp_CP__div_pagerank_hp_CP_
+ +       0.0533 * (normalized) log_OP__OP_neighbors_3_mp_m_neighbors_2_mp_CP__div_pagerank_mp_CP_
+ +       0.2561 * (normalized) log_OP__OP_neighbors_2_hp_m_indegree_hp_CP__div_pagerank_hp_CP_
+ +       0.0697 * (normalized) log_OP__OP_neighbors_2_mp_m_indegree_mp_CP__div_pagerank_mp_CP_
+ +       0.0003 * (normalized) neighbors_2_hp_div_neighbors_2_mp
+ +       0.0001 * (normalized) neighbors_3_hp_div_neighbors_3_mp
+ +       0.0024 * (normalized) neighbors_4_hp_div_neighbors_4_mp
+ +       0.0545 * (normalized) L_truncatedpagerank_1_hp
+ +       0.044  * (normalized) L_truncatedpagerank_2_hp
+ +       0.0446 * (normalized) L_truncatedpagerank_3_hp
+ +       0.0478 * (normalized) L_truncatedpagerank_4_hp
+ +       0.0642 * (normalized) L_truncatedpagerank_1_mp
+ +       0.0579 * (normalized) L_truncatedpagerank_2_mp
+ +       0.0573 * (normalized) L_truncatedpagerank_3_mp
+ +       0.058  * (normalized) L_truncatedpagerank_4_mp
+ +      -0.0742 * (normalized) log_OP_truncatedpagerank_1_hp_div_pagerank_hp_CP_
+ +      -0.119  * (normalized) log_OP_truncatedpagerank_2_hp_div_pagerank_hp_CP_
+ +      -0.1047 * (normalized) log_OP_truncatedpagerank_3_hp_div_pagerank_hp_CP_
+ +      -0.0818 * (normalized) log_OP_truncatedpagerank_4_hp_div_pagerank_hp_CP_
+ +       0.2379 * (normalized) log_OP_truncatedpagerank_1_mp_div_pagerank_mp_CP_
+ +       0.1775 * (normalized) log_OP_truncatedpagerank_2_mp_div_pagerank_mp_CP_
+ +       0.1619 * (normalized) log_OP_truncatedpagerank_3_mp_div_pagerank_mp_CP_
+ +       0.1541 * (normalized) log_OP_truncatedpagerank_4_mp_div_pagerank_mp_CP_
+ +       0.0652 * (normalized) truncatedpagerank_4_hp_div_truncatedpagerank_3_hp
+ +       0.0118 * (normalized) truncatedpagerank_4_mp_div_truncatedpagerank_3_mp
+ +       0.0233 * (normalized) truncatedpagerank_3_hp_div_truncatedpagerank_2_hp
+ +       0.0021 * (normalized) truncatedpagerank_3_mp_div_truncatedpagerank_2_mp
+ +      -0.1027 * (normalized) truncatedpagerank_2_hp_div_truncatedpagerank_1_hp
+ +      -0.0369 * (normalized) truncatedpagerank_2_mp_div_truncatedpagerank_1_mp
+ +      -0.0066 * (normalized) log_OP_min_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+ +       0.0464 * (normalized) log_OP_min_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+ +       0.0803 * (normalized) log_OP_max_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+ +      -0.0056 * (normalized) log_OP_max_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+ +      -0.0293 * (normalized) log_OP_avg_OP_truncatedpagerank_2_hp_div_truncatedpagerank_1_hp_truncatedpagerank_3_hp_div_truncatedpagerank_2_hp_truncatedpagerank_4_hp_div_truncatedpagerank_3_hp_CP__CP_
+ +      -0.026  * (normalized) log_OP_avg_OP_truncatedpagerank_2_mp_div_truncatedpagerank_1_mp_truncatedpagerank_3_mp_div_truncatedpagerank_2_mp_truncatedpagerank_4_mp_div_truncatedpagerank_3_mp_CP__CP_
+ +      -0.0031 * (normalized) truncatedpagerank_1_mp_div_truncatedpagerank_1_hp
+ +      -0.0021 * (normalized) truncatedpagerank_2_mp_div_truncatedpagerank_2_hp
+ +      -0.0017 * (normalized) truncatedpagerank_3_mp_div_truncatedpagerank_3_hp
+ +      -0.0015 * (normalized) truncatedpagerank_4_mp_div_truncatedpagerank_4_hp
+ +      -4.9651 * (normalized) assessmentscore
+ +       4.4418
+
+Number of kernel evaluations: 597405 (66.783% cached)
+
+
+
+Time taken to build model: 0.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3996               99.95   %
+Incorrectly Classified Instances         2                0.05   %
+Kappa statistic                          0.9952
+Mean absolute error                      0.0005
+Root mean squared error                  0.0224
+Relative absolute error                  0.4759 %
+Root relative squared error              9.7666 %
+Total Number of Instances             3998     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.000    1.000      0.991    0.995      0.995    0.995     0.991     spam
+                 1.000    0.009    0.999      1.000    1.000      0.995    0.995     0.999     nonspam
+Weighted Avg.    0.999    0.009    1.000      0.999    0.999      0.995    0.995     0.999     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  220    2 |    a = spam
+    0 3776 |    b = nonspam
+

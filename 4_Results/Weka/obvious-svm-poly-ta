@@ -1,0 +1,66 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     .\uk-2007-05.obvious_features.csv
+Instances:    3998
+Attributes:   5
+              hostid
+              number_of_pages
+              length_of_hostname
+              class
+              assessmentscore
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: spam, nonspam
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0022 * (normalized) hostid
+ +      -0.2724 * (normalized) number_of_pages
+ +      -0.0404 * (normalized) length_of_hostname
+ +      -4.8194 * (normalized) assessmentscore
+ +       2.6173
+
+Number of kernel evaluations: 8298 (64.776% cached)
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         800              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     spam
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     nonspam
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  52   0 |   a = spam
+   0 748 |   b = nonspam
+

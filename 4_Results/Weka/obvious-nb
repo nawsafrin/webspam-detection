@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     .\uk-2007-05.obvious_features.csv
+Instances:    3998
+Attributes:   5
+              hostid
+              number_of_pages
+              length_of_hostname
+              class
+              assessmentscore
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                          Class
+Attribute                  spam    nonspam
+                         (0.06)     (0.94)
+===========================================
+hostid
+  mean                51223.3445 57356.1354
+  std. dev.           31912.8893 32716.9709
+  weight sum                 222       3776
+  precision               28.634     28.634
+
+number_of_pages
+  mean                 2035.1856   951.9953
+  std. dev.            7690.2148  4712.9007
+  weight sum                 222       3776
+  precision              60.9732    60.9732
+
+length_of_hostname
+  mean                   23.1209    22.5748
+  std. dev.               6.4265     5.3349
+  weight sum                 222       3776
+  precision               1.8947     1.8947
+
+assessmentscore
+  mean                    0.9254     0.0168
+  std. dev.               0.1225      0.063
+  weight sum                 222       3776
+  precision                0.027      0.027
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3966               99.1996 %
+Incorrectly Classified Instances        32                0.8004 %
+Kappa statistic                          0.9285
+Mean absolute error                      0.0082
+Root mean squared error                  0.089 
+Relative absolute error                  7.7919 %
+Root relative squared error             38.8525 %
+Total Number of Instances             3998     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.008    0.874      1.000    0.933      0.931    0.997     0.909     spam
+                 0.992    0.000    1.000      0.992    0.996      0.931    1.000     1.000     nonspam
+Weighted Avg.    0.992    0.000    0.993      0.992    0.992      0.931    1.000     0.995     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  222    0 |    a = spam
+   32 3744 |    b = nonspam
+

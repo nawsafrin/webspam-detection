@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 8 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     .\uk-2007-05.link_based_features_transformed.csv
+Instances:    3998
+Attributes:   140
+              [list of attributes omitted]
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 8 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.82 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         763               95.375  %
+Incorrectly Classified Instances        37                4.625  %
+Kappa statistic                          0.4312
+Mean absolute error                      0.0471
+Root mean squared error                  0.1827
+Relative absolute error                 42.2158 %
+Root relative squared error             74.0264 %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.288    0.000    1.000      0.288    0.448      0.524    0.944     0.789     spam
+                 1.000    0.712    0.953      1.000    0.976      0.524    0.944     0.992     nonspam
+Weighted Avg.    0.954    0.665    0.956      0.954    0.942      0.524    0.944     0.979     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  15  37 |   a = spam
+   0 748 |   b = nonspam
+

@@ -1,0 +1,144 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   44
+              hostid
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+              assessmentscore
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: spam, nonspam
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0306 * (normalized) hostid
+ +      -0.054  * (normalized) eq_hp_mp
+ +       0.004  * (normalized) assortativity_hp
+ +      -0.0338 * (normalized) assortativity_mp
+ +      -0.038  * (normalized) avgin_of_out_hp
+ +      -0.0243 * (normalized) avgin_of_out_mp
+ +      -0.1444 * (normalized) avgout_of_in_hp
+ +      -0.1752 * (normalized) avgout_of_in_mp
+ +      -0.1981 * (normalized) indegree_hp
+ +      -0.2711 * (normalized) indegree_mp
+ +      -0.0026 * (normalized) neighbors_2_hp
+ +      -0.065  * (normalized) neighbors_2_mp
+ +       0.0751 * (normalized) neighbors_3_hp
+ +       0.0672 * (normalized) neighbors_3_mp
+ +      -0.0643 * (normalized) neighbors_4_hp
+ +      -0.0279 * (normalized) neighbors_4_mp
+ +       0.0226 * (normalized) outdegree_hp
+ +      -0.025  * (normalized) outdegree_mp
+ +       0.0187 * (normalized) pagerank_hp
+ +      -0.0256 * (normalized) pagerank_mp
+ +       0.4213 * (normalized) prsigma_hp
+ +       0.403  * (normalized) prsigma_mp
+ +       0.0972 * (normalized) reciprocity_hp
+ +      -0.1325 * (normalized) reciprocity_mp
+ +       0.028  * (normalized) siteneighbors_1_hp
+ +      -0.3207 * (normalized) siteneighbors_1_mp
+ +       0.1586 * (normalized) siteneighbors_2_hp
+ +       0.0227 * (normalized) siteneighbors_2_mp
+ +       0.3144 * (normalized) siteneighbors_3_hp
+ +       0.0157 * (normalized) siteneighbors_3_mp
+ +      -0.0358 * (normalized) siteneighbors_4_hp
+ +      -0.3659 * (normalized) siteneighbors_4_mp
+ +       0.0178 * (normalized) truncatedpagerank_1_hp
+ +      -0.0298 * (normalized) truncatedpagerank_1_mp
+ +       0.0202 * (normalized) truncatedpagerank_2_hp
+ +      -0.0245 * (normalized) truncatedpagerank_2_mp
+ +       0.0208 * (normalized) truncatedpagerank_3_hp
+ +      -0.0206 * (normalized) truncatedpagerank_3_mp
+ +       0.0231 * (normalized) truncatedpagerank_4_hp
+ +      -0.0169 * (normalized) truncatedpagerank_4_mp
+ +      -0.2519 * (normalized) trustrank_hp
+ +      -0.2796 * (normalized) trustrank_mp
+ +      -5.0382 * (normalized) assessmentscore
+ +       2.7749
+
+Number of kernel evaluations: 48290 (69.896% cached)
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         800              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Relative absolute error                  0      %
+Root relative squared error              0      %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     spam
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     nonspam
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  52   0 |   a = spam
+   0 748 |   b = nonspam
+

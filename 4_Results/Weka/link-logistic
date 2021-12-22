@@ -1,0 +1,181 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   44
+              hostid
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+              assessmentscore
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                         Class
+Variable                                  spam
+==============================================
+hostid                                 -0.0001
+eq_hp_mp                                7.9348
+assortativity_hp                       -0.0125
+assortativity_mp                        0.0168
+avgin_of_out_hp                         0.0001
+avgin_of_out_mp                         0.0001
+avgout_of_in_hp                         0.0634
+avgout_of_in_mp                         0.0027
+indegree_hp                             0.0012
+indegree_mp                            -0.0017
+neighbors_2_hp                         -0.0014
+neighbors_2_mp                          0.0015
+neighbors_3_hp                          0.0002
+neighbors_3_mp                         -0.0003
+neighbors_4_hp                               0
+neighbors_4_mp                              -0
+outdegree_hp                           -0.0253
+outdegree_mp                            0.0935
+pagerank_hp                       6845831.2099
+pagerank_mp                      -5219082.3909
+prsigma_hp                              6.6221
+prsigma_mp                            -11.0048
+reciprocity_hp                          -1.261
+reciprocity_mp                           -6.51
+siteneighbors_1_hp                      2.1924
+siteneighbors_1_mp                     -1.4423
+siteneighbors_2_hp                     -0.1036
+siteneighbors_2_mp                      0.3409
+siteneighbors_3_hp                      -0.109
+siteneighbors_3_mp                      0.0693
+siteneighbors_4_hp                     -0.0174
+siteneighbors_4_mp                      0.0271
+truncatedpagerank_1_hp           15864555.7877
+truncatedpagerank_1_mp            7825738.4253
+truncatedpagerank_2_hp           -9801669.5752
+truncatedpagerank_2_mp           -8058613.0385
+truncatedpagerank_3_hp            7536963.5076
+truncatedpagerank_3_mp            9399366.6962
+truncatedpagerank_4_hp          -15634192.5446
+truncatedpagerank_4_mp           -8644057.1286
+trustrank_hp                      -963520.2077
+trustrank_mp                      1146468.3693
+assessmentscore                        181.864
+Intercept                              -96.636
+
+
+Odds Ratios...
+                                         Class
+Variable                                  spam
+==============================================
+hostid                                  0.9999
+eq_hp_mp                             2792.8698
+assortativity_hp                        0.9876
+assortativity_mp                         1.017
+avgin_of_out_hp                         1.0001
+avgin_of_out_mp                         1.0001
+avgout_of_in_hp                         1.0654
+avgout_of_in_mp                         1.0027
+indegree_hp                             1.0012
+indegree_mp                             0.9983
+neighbors_2_hp                          0.9986
+neighbors_2_mp                          1.0015
+neighbors_3_hp                          1.0002
+neighbors_3_mp                          0.9997
+neighbors_4_hp                               1
+neighbors_4_mp                               1
+outdegree_hp                             0.975
+outdegree_mp                             1.098
+pagerank_hp                           Infinity
+pagerank_mp                                  0
+prsigma_hp                            751.5444
+prsigma_mp                                   0
+reciprocity_hp                          0.2834
+reciprocity_mp                          0.0015
+siteneighbors_1_hp                      8.9571
+siteneighbors_1_mp                      0.2364
+siteneighbors_2_hp                      0.9016
+siteneighbors_2_mp                      1.4062
+siteneighbors_3_hp                      0.8967
+siteneighbors_3_mp                      1.0718
+siteneighbors_4_hp                      0.9827
+siteneighbors_4_mp                      1.0275
+truncatedpagerank_1_hp                Infinity
+truncatedpagerank_1_mp                Infinity
+truncatedpagerank_2_hp                       0
+truncatedpagerank_2_mp                       0
+truncatedpagerank_3_hp                Infinity
+truncatedpagerank_3_mp                Infinity
+truncatedpagerank_4_hp                       0
+truncatedpagerank_4_mp                       0
+trustrank_hp                                 0
+trustrank_mp                          Infinity
+assessmentscore           9.605672867318339E78
+
+
+Time taken to build model: 0.36 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3990               99.7999 %
+Incorrectly Classified Instances         8                0.2001 %
+Kappa statistic                          0.9809
+Mean absolute error                      0.002 
+Root mean squared error                  0.0432
+Relative absolute error                  1.9404 %
+Root relative squared error             18.8535 %
+Total Number of Instances             3998     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.982    0.001    0.982      0.982    0.982      0.981    0.991     0.990     spam
+                 0.999    0.018    0.999      0.999    0.999      0.981    0.995     0.999     nonspam
+Weighted Avg.    0.998    0.017    0.998      0.998    0.998      0.981    0.995     0.999     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+  218    4 |    a = spam
+    4 3772 |    b = nonspam
+

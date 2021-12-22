@@ -1,0 +1,350 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     .\uk-2007-05.link_based_features.csv
+Instances:    3998
+Attributes:   44
+              hostid
+              eq_hp_mp
+              assortativity_hp
+              assortativity_mp
+              avgin_of_out_hp
+              avgin_of_out_mp
+              avgout_of_in_hp
+              avgout_of_in_mp
+              indegree_hp
+              indegree_mp
+              neighbors_2_hp
+              neighbors_2_mp
+              neighbors_3_hp
+              neighbors_3_mp
+              neighbors_4_hp
+              neighbors_4_mp
+              outdegree_hp
+              outdegree_mp
+              pagerank_hp
+              pagerank_mp
+              prsigma_hp
+              prsigma_mp
+              reciprocity_hp
+              reciprocity_mp
+              siteneighbors_1_hp
+              siteneighbors_1_mp
+              siteneighbors_2_hp
+              siteneighbors_2_mp
+              siteneighbors_3_hp
+              siteneighbors_3_mp
+              siteneighbors_4_hp
+              siteneighbors_4_mp
+              truncatedpagerank_1_hp
+              truncatedpagerank_1_mp
+              truncatedpagerank_2_hp
+              truncatedpagerank_2_mp
+              truncatedpagerank_3_hp
+              truncatedpagerank_3_mp
+              truncatedpagerank_4_hp
+              truncatedpagerank_4_mp
+              trustrank_hp
+              trustrank_mp
+              class
+              assessmentscore
+Test mode:    split 80.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                              Class
+Attribute                      spam    nonspam
+                             (0.06)     (0.94)
+===============================================
+hostid
+  mean                    51223.3445 57356.1354
+  std. dev.               31912.8893 32716.9709
+  weight sum                     222       3776
+  precision                   28.634     28.634
+
+eq_hp_mp
+  mean                        0.7973     0.6949
+  std. dev.                    0.402     0.4604
+  weight sum                     222       3776
+  precision                        1          1
+
+assortativity_hp
+  mean                       32.0153    16.6527
+  std. dev.                 192.2358   148.9008
+  weight sum                     222       3776
+  precision                     1.24       1.24
+
+assortativity_mp
+  mean                       64.0754    26.4081
+  std. dev.                 304.3992   212.6089
+  weight sum                     222       3776
+  precision                   1.8675     1.8675
+
+avgin_of_out_hp
+  mean                      810.9635  1090.6705
+  std. dev.                3905.1645  6446.3248
+  weight sum                     222       3776
+  precision                 128.7796   128.7796
+
+avgin_of_out_mp
+  mean                       796.032  1129.7822
+  std. dev.                3878.1057 10005.4592
+  weight sum                     222       3776
+  precision                 223.4123   223.4123
+
+avgout_of_in_hp
+  mean                        40.838    40.0956
+  std. dev.                  69.4004    70.8718
+  weight sum                     222       3776
+  precision                   0.2747     0.2747
+
+avgout_of_in_mp
+  mean                       35.4585    31.1202
+  std. dev.                  67.7993    59.2255
+  weight sum                     222       3776
+  precision                   0.2733     0.2733
+
+indegree_hp
+  mean                     1404.6162   821.4724
+  std. dev.                6747.0587    4723.71
+  weight sum                     222       3776
+  precision                 118.6097   118.6097
+
+indegree_mp
+  mean                     1582.7528  1016.8075
+  std. dev.                6830.0758  5276.1018
+  weight sum                     222       3776
+  precision                 108.5484   108.5484
+
+neighbors_2_hp
+  mean                      3868.864  4214.4982
+  std. dev.               14143.2178 14519.4074
+  weight sum                     222       3776
+  precision                  144.667    144.667
+
+neighbors_2_mp
+  mean                     3964.3247  3830.7708
+  std. dev.               14168.8389 13762.7124
+  weight sum                     222       3776
+  precision                 150.4153   150.4153
+
+neighbors_3_hp
+  mean                    18015.0556  23727.989
+  std. dev.               49277.8661  55377.112
+  weight sum                     222       3776
+  precision                 202.4061   202.4061
+
+neighbors_3_mp
+  mean                    17193.7882 19737.0535
+  std. dev.               49036.5411 50687.4589
+  weight sum                     222       3776
+  precision                 210.1652   210.1652
+
+neighbors_4_hp
+  mean                    60856.2921 81855.6769
+  std. dev.              116584.5497 142630.846
+  weight sum                     222       3776
+  precision                 392.0857   392.0857
+
+neighbors_4_mp
+  mean                    55946.2772 69200.8857
+  std. dev.              110774.7023133706.1393
+  weight sum                     222       3776
+  precision                 383.5724   383.5724
+
+outdegree_hp
+  mean                       14.9892    11.9019
+  std. dev.                  32.1536    29.3601
+  weight sum                     222       3776
+  precision                      9.4        9.4
+
+outdegree_mp
+  mean                       16.7309    14.8111
+  std. dev.                  38.3699    35.8081
+  weight sum                     222       3776
+  precision                   7.8859     7.8859
+
+pagerank_hp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+pagerank_mp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+prsigma_hp
+  mean                        0.3591     0.4619
+  std. dev.                   0.5645     0.4904
+  weight sum                     222       3776
+  precision                    0.002      0.002
+
+prsigma_mp
+  mean                         0.344     0.4199
+  std. dev.                   0.5464     0.4553
+  weight sum                     222       3776
+  precision                   0.0024     0.0024
+
+reciprocity_hp
+  mean                        0.7274      0.723
+  std. dev.                   0.3998     0.3947
+  weight sum                     222       3776
+  precision                   0.0031     0.0031
+
+reciprocity_mp
+  mean                        0.8237     0.8468
+  std. dev.                   0.3257     0.2924
+  weight sum                     222       3776
+  precision                    0.003      0.003
+
+siteneighbors_1_hp
+  mean                        4.8731     6.3455
+  std. dev.                   4.7473     5.1607
+  weight sum                     222       3776
+  precision                   1.5455     1.5455
+
+siteneighbors_1_mp
+  mean                        4.3857     5.3002
+  std. dev.                   4.5499     5.0364
+  weight sum                     222       3776
+  precision                   1.5455     1.5455
+
+siteneighbors_2_hp
+  mean                       10.6419    14.3126
+  std. dev.                  16.5856    19.3453
+  weight sum                     222       3776
+  precision                   2.3438     2.3438
+
+siteneighbors_2_mp
+  mean                        9.8712    13.1538
+  std. dev.                  16.0256    18.7459
+  weight sum                     222       3776
+  precision                   2.3438     2.3438
+
+siteneighbors_3_hp
+  mean                       48.2998    76.5467
+  std. dev.                  89.3553   144.6759
+  weight sum                     222       3776
+  precision                   4.0724     4.0724
+
+siteneighbors_3_mp
+  mean                       43.9294    67.0387
+  std. dev.                   80.956   136.4611
+  weight sum                     222       3776
+  precision                   4.0993     4.0993
+
+siteneighbors_4_hp
+  mean                      164.9296   282.3392
+  std. dev.                 273.4129   541.7897
+  weight sum                     222       3776
+  precision                   6.4804     6.4804
+
+siteneighbors_4_mp
+  mean                      156.2528   244.9385
+  std. dev.                 281.6043   509.1444
+  weight sum                     222       3776
+  precision                   6.6542     6.6542
+
+truncatedpagerank_1_hp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_1_mp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_2_hp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_2_mp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_3_hp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_3_mp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_4_hp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+truncatedpagerank_4_mp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+trustrank_hp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+trustrank_mp
+  mean                             0          0
+  std. dev.                        0          0
+  weight sum                     222       3776
+  precision                        0          0
+
+assessmentscore
+  mean                        0.9254     0.0168
+  std. dev.                   0.1225      0.063
+  weight sum                     222       3776
+  precision                    0.027      0.027
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.1 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         790               98.75   %
+Incorrectly Classified Instances        10                1.25   %
+Kappa statistic                          0.9024
+Mean absolute error                      0.0131
+Root mean squared error                  0.1126
+Relative absolute error                 11.7154 %
+Root relative squared error             45.6293 %
+Total Number of Instances              800     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.962    0.011    0.862      0.962    0.909      0.904    0.961     0.877     spam
+                 0.989    0.038    0.997      0.989    0.993      0.904    0.960     0.993     nonspam
+Weighted Avg.    0.988    0.037    0.989      0.988    0.988      0.904    0.960     0.985     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+  50   2 |   a = spam
+   8 740 |   b = nonspam
+
